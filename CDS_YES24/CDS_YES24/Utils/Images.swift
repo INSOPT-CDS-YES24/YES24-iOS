@@ -9,20 +9,20 @@ import UIKit
 
 public enum Image {
     // TabBar
-    public static let category = UIImage(named: "category")
-    public static let home = UIImage(named: "home")
-    public static let myTicket = UIImage(named: "myTicket")
-    public static let search = UIImage(named: "search")
-    public static let selectedMyTicket = UIImage(named: "selectedMyTicket")
-    public static let selectedSearch = UIImage(named: "selectedSearch")
-    public static let seletedCategory = UIImage(named: "seletedCategory")
-    public static let seletedHome = UIImage(named: "seletedHome")
+    public static let category = UIImage(named: "category")!
+    public static let home = UIImage(named: "home")!
+    public static let myTicket = UIImage(named: "myTicket")!
+    public static let search = UIImage(named: "search")!
+    public static let selectedMyTicket = UIImage(named: "selectedMyTicket")!
+    public static let selectedSearch = UIImage(named: "selectedSearch")!
+    public static let seletedCategory = UIImage(named: "seletedCategory")!
+    public static let seletedHome = UIImage(named: "seletedHome")!
     
     // Home
     
     // Detail
-    public static let heart = UIImage(named: "heart")
-    public static let fillHeart = UIImage(named: "fillHeart")
+    public static let heart = UIImage(named: "heart")!
+    public static let fillHeart = UIImage(named: "fillHeart")!
     
     // Search
     

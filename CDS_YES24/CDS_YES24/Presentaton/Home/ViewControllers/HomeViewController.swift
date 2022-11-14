@@ -7,8 +7,12 @@
 
 import UIKit
 
+import SnapKit
+import Then
+
 final class HomeViewController: UIViewController {
 
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white

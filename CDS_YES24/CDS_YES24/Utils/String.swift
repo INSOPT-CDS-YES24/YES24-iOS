@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+extension Const {
+    struct String {
+        public static let example = "함냐"
+    }
+}
