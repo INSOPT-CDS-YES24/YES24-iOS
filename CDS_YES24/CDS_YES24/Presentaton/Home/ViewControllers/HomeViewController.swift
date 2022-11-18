@@ -69,7 +69,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
         else if (indexPath.section == 1){
             return 247.0
         }
-        else if (indexPath.section == 2 || indexPath.section == 3 ){
+        else if (indexPath.section == 2 || indexPath.section == 3){
             return 395.0
         }
         else {

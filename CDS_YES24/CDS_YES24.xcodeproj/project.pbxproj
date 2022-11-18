@@ -89,6 +89,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03330472292791B400CCF43A /* HomeTable */ = {
+			isa = PBXGroup;
+			children = (
+				03330473292791CC00CCF43A /* ShowGallery */,
+				0333046C2927770C00CCF43A /* ShowGalleryTableViewCell.swift */,
+				0333046E2927788F00CCF43A /* HomeButtonTableViewCell.swift */,
+				033304702927789F00CCF43A /* YesPickTableViewCell.swift */,
+			);
+			path = HomeTable;
+			sourceTree = "<group>";
+		};
+		03330473292791CC00CCF43A /* ShowGallery */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ShowGallery;
+			sourceTree = "<group>";
+		};
 		3B78BAF52921D47C002438F2 = {
 			isa = PBXGroup;
 			children = (
@@ -200,9 +218,7 @@
 		3B78BB1E2921D6A3002438F2 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				0333046C2927770C00CCF43A /* ShowGalleryTableViewCell.swift */,
-				0333046E2927788F00CCF43A /* HomeButtonTableViewCell.swift */,
-				033304702927789F00CCF43A /* YesPickTableViewCell.swift */,
+				03330472292791B400CCF43A /* HomeTable */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
