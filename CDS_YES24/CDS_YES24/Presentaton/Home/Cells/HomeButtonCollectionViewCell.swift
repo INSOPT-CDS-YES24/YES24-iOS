@@ -7,19 +7,15 @@
 
 import UIKit
 
-import SnapKit
-import SwiftyColor
-import Then
-
 class HomeButtonCollectionViewCell: UICollectionViewCell {
     
     static let identifier = "HomeButtonCollectionViewCell"
     
-    private let homeButtonContainerView = UIView()
-    private let homeButtonImage = UIImageView()
-    private let homeButtonTitle = UILabel().then {
-        $0.textColor = .black
-        $0.font = .pretendard(.medium, size: 14)
+    private let HomeButtonContainerView = UIView()
+    private let buttonIcon = UIImageView()
+    private let buttonLabel = UILabel().then {
+        $0.textColor = Color.yesBrownishGrey
+        $0.font = UIFont.pretendard(.medium, size: 14)
     }
     
     override init(frame: CGRect) {
@@ -27,39 +23,37 @@ class HomeButtonCollectionViewCell: UICollectionViewCell {
         layout()
     }
     
-    required init(coder: NSCoder) {
+    required init (coder: NSCoder) {
         fatalError("init(coder: ) has not been implemented")
     }
 }
-    
-    extension HomeButtonCollectionViewCell {
-        private func layout() {
-            backgroundColor = .clear
-            contentView.backgroundColor = .clear
-            [homeButtonContainerView, homeButtonImage, homeButtonTitle].forEach {
-                contentView.addSubview($0)
-            }
-            
-            homeButtonContainerView.snp.makeConstraints { make in
-                make.centerY.equalToSuperview()
-                make.leading.equalToSuperview()
-                make.width.height.equalTo(130)
-            }
-            
-            homeButtonImage.snp.makeConstraints { make in
-                make.centerY.equalToSuperview()
-                make.top.equalToSuperview().offset(24)
-                make.width.equalTo(54)
-            }
-            
-            homeButtonTitle.snp.makeConstraints { make in
-                make.centerY.equalToSuperview()
-                make.top.equalTo(homeButtonImage.snp.bottom).offset(3)
-            }
+
+extension HomeButtonCollectionViewCell {
+    private func layout() {
+        backgroundColor = .clear
+        contentView.backgroundColor = .clear
+        [HomeButtonContainerView, buttonIcon, buttonLabel].forEach {
+            contentView.addSubview($0)
         }
         
-        func dataBind(model: HomeButtonModel) {
-            homeButtonImage.image = UIImage(named: model.buttonImage)
-            homeButtonTitle.text = model.buttonTitle
+        HomeButtonContainerView.addSubview(buttonIcon)
+        HomeButtonContainerView.addSubview(buttonLabel)
+        HomeButtonContainerView.snp.makeConstraints { make in
+            make.top.equalToSuperview()
+            make.centerY.equalToSuperview()
         }
+        
+        buttonIcon.snp.makeConstraints { make in
+            make.top.equalToSuperview().offset(24)
+        }
+        
+        buttonLabel.snp.makeConstraints { make in
+            make.top.equalTo(buttonIcon.snp.bottom).offset(1)
+        }
+    }
+    
+    func dataBind(model: HomeButtonModel){
+        buttonIcon.image = UIImage(named: model.buttonIcon)
+        buttonLabel.text = model.buttonLabel
+    }
 }

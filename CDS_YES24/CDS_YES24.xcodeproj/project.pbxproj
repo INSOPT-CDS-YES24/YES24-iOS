@@ -10,6 +10,8 @@
 		0333046D2927770C00CCF43A /* ShowGalleryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0333046C2927770C00CCF43A /* ShowGalleryTableViewCell.swift */; };
 		0333046F2927788F00CCF43A /* HomeButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0333046E2927788F00CCF43A /* HomeButtonTableViewCell.swift */; };
 		033304712927789F00CCF43A /* YesPickTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033304702927789F00CCF43A /* YesPickTableViewCell.swift */; };
+		033304752927BDFB00CCF43A /* HomeButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033304742927BDFB00CCF43A /* HomeButtonCollectionViewCell.swift */; };
+		033304782927C35100CCF43A /* HomeButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033304772927C35100CCF43A /* HomeButtonModel.swift */; };
 		3B53F9BB292200AC006E3156 /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B53F9BA292200AC006E3156 /* UIFont+.swift */; };
 		3B53F9BD2922013F006E3156 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B53F9BC2922013F006E3156 /* String.swift */; };
 		3B53F9C02922082E006E3156 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B53F9BF2922082E006E3156 /* Const.swift */; };
@@ -45,6 +47,8 @@
 		0333046C2927770C00CCF43A /* ShowGalleryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowGalleryTableViewCell.swift; sourceTree = "<group>"; };
 		0333046E2927788F00CCF43A /* HomeButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButtonTableViewCell.swift; sourceTree = "<group>"; };
 		033304702927789F00CCF43A /* YesPickTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YesPickTableViewCell.swift; sourceTree = "<group>"; };
+		033304742927BDFB00CCF43A /* HomeButtonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButtonCollectionViewCell.swift; sourceTree = "<group>"; };
+		033304772927C35100CCF43A /* HomeButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButtonModel.swift; sourceTree = "<group>"; };
 		3B53F9BA292200AC006E3156 /* UIFont+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
 		3B53F9BC2922013F006E3156 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		3B53F9BF2922082E006E3156 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
@@ -89,22 +93,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		03330472292791B400CCF43A /* HomeTable */ = {
+		033304762927BE3100CCF43A /* Table */ = {
 			isa = PBXGroup;
 			children = (
-				03330473292791CC00CCF43A /* ShowGallery */,
 				0333046C2927770C00CCF43A /* ShowGalleryTableViewCell.swift */,
 				0333046E2927788F00CCF43A /* HomeButtonTableViewCell.swift */,
 				033304702927789F00CCF43A /* YesPickTableViewCell.swift */,
 			);
-			path = HomeTable;
-			sourceTree = "<group>";
-		};
-		03330473292791CC00CCF43A /* ShowGallery */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ShowGallery;
+			path = Table;
 			sourceTree = "<group>";
 		};
 		3B78BAF52921D47C002438F2 = {
@@ -218,7 +214,8 @@
 		3B78BB1E2921D6A3002438F2 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				03330472292791B400CCF43A /* HomeTable */,
+				033304762927BE3100CCF43A /* Table */,
+				033304742927BDFB00CCF43A /* HomeButtonCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -226,6 +223,7 @@
 		3B78BB202921D6B1002438F2 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				033304772927C35100CCF43A /* HomeButtonModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -431,11 +429,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B78BB542921FEAD002438F2 /* MyTicketViewController.swift in Sources */,
+				033304752927BDFB00CCF43A /* HomeButtonCollectionViewCell.swift in Sources */,
 				3B53F9BD2922013F006E3156 /* String.swift in Sources */,
 				3B78BB562921FEEF002438F2 /* TabBarController.swift in Sources */,
 				3B78BB502921FE57002438F2 /* SearchViewController.swift in Sources */,
 				3B78BB062921D47C002438F2 /* HomeViewController.swift in Sources */,
 				3B53F9BB292200AC006E3156 /* UIFont+.swift in Sources */,
+				033304782927C35100CCF43A /* HomeButtonModel.swift in Sources */,
 				3B78BB582921FFBB002438F2 /* UIView+.swift in Sources */,
 				3B78BB3C2921DDAA002438F2 /* Color.swift in Sources */,
 				0333046F2927788F00CCF43A /* HomeButtonTableViewCell.swift in Sources */,

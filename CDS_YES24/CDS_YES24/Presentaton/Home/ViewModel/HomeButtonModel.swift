@@ -8,6 +8,6 @@
 import Foundation
 
 struct HomeButtonModel {
-    let buttonImage: String
-    let buttonTitle: String
+    let buttonIcon : String
+    let buttonLabel : String
 }
