@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0333046D2927770C00CCF43A /* ShowGalleryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0333046C2927770C00CCF43A /* ShowGalleryTableViewCell.swift */; };
+		0333046F2927788F00CCF43A /* HomeButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0333046E2927788F00CCF43A /* HomeButtonTableViewCell.swift */; };
+		033304712927789F00CCF43A /* YesPickTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033304702927789F00CCF43A /* YesPickTableViewCell.swift */; };
 		3B53F9BB292200AC006E3156 /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B53F9BA292200AC006E3156 /* UIFont+.swift */; };
 		3B53F9BD2922013F006E3156 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B53F9BC2922013F006E3156 /* String.swift */; };
 		3B53F9C02922082E006E3156 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B53F9BF2922082E006E3156 /* Const.swift */; };
@@ -39,6 +42,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0333046C2927770C00CCF43A /* ShowGalleryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowGalleryTableViewCell.swift; sourceTree = "<group>"; };
+		0333046E2927788F00CCF43A /* HomeButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButtonTableViewCell.swift; sourceTree = "<group>"; };
+		033304702927789F00CCF43A /* YesPickTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YesPickTableViewCell.swift; sourceTree = "<group>"; };
 		3B53F9BA292200AC006E3156 /* UIFont+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
 		3B53F9BC2922013F006E3156 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		3B53F9BF2922082E006E3156 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
@@ -194,6 +200,9 @@
 		3B78BB1E2921D6A3002438F2 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				0333046C2927770C00CCF43A /* ShowGalleryTableViewCell.swift */,
+				0333046E2927788F00CCF43A /* HomeButtonTableViewCell.swift */,
+				033304702927789F00CCF43A /* YesPickTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -413,12 +422,15 @@
 				3B53F9BB292200AC006E3156 /* UIFont+.swift in Sources */,
 				3B78BB582921FFBB002438F2 /* UIView+.swift in Sources */,
 				3B78BB3C2921DDAA002438F2 /* Color.swift in Sources */,
+				0333046F2927788F00CCF43A /* HomeButtonTableViewCell.swift in Sources */,
 				3B78BB022921D47C002438F2 /* AppDelegate.swift in Sources */,
+				0333046D2927770C00CCF43A /* ShowGalleryTableViewCell.swift in Sources */,
 				3B78BB042921D47C002438F2 /* SceneDelegate.swift in Sources */,
 				3B78BB5A2922006F002438F2 /* UIStackView+.swift in Sources */,
 				3B78BB3E2921E26E002438F2 /* Images.swift in Sources */,
 				3B53F9C2292224C6006E3156 /* TabBarItem.swift in Sources */,
 				3B78BB522921FE7F002438F2 /* DetailViewController.swift in Sources */,
+				033304712927789F00CCF43A /* YesPickTableViewCell.swift in Sources */,
 				3B53F9C02922082E006E3156 /* Const.swift in Sources */,
 				3B53F9C429222F94006E3156 /* UITabBar+.swift in Sources */,
 			);
@@ -559,7 +571,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 665TA4D5B9;
+				DEVELOPMENT_TEAM = DGT9BQA4KH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CDS_YES24/Resource/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -586,7 +598,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 665TA4D5B9;
+				DEVELOPMENT_TEAM = DGT9BQA4KH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CDS_YES24/Resource/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

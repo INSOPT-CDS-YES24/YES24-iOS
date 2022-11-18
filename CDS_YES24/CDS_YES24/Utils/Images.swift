@@ -19,6 +19,13 @@ public enum Image {
     public static let seletedHome = UIImage(named: "seletedHome")!
     
     // Home
+    public static let concert = UIImage(named: "homeIcConcert")!
+    public static let musical = UIImage(named: "homeIcMusical")!
+    public static let play = UIImage(named: "homeIcClassic")!
+    public static let classic = UIImage(named: "homeIcMusical")!
+    public static let display = UIImage(named: "homeIcDisplay")!
+    public static let child = UIImage(named: "homeIcChild")!
+    public static let homeLogo = UIImage(named: "homeLogoYes24Ticket")!
     
     // Detail
     public static let heart = UIImage(named: "heart")!
