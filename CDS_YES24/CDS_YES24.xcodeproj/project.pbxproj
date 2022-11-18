@@ -36,12 +36,13 @@
 		3B78BB562921FEEF002438F2 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B78BB552921FEEF002438F2 /* TabBarController.swift */; };
 		3B78BB582921FFBB002438F2 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B78BB572921FFBB002438F2 /* UIView+.swift */; };
 		3B78BB5A2922006F002438F2 /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B78BB592922006F002438F2 /* UIStackView+.swift */; };
-		5209DB182924DA760054F9FD /* MyTicketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5209DB172924DA760054F9FD /* MyTicketTableViewCell.swift */; };
+		5209DB182924DA760054F9FD /* CellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5209DB172924DA760054F9FD /* CellProtocol.swift */; };
 		5209DB1A2924E4F20054F9FD /* MyTicketTabelViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5209DB192924E4F20054F9FD /* MyTicketTabelViewHeaderView.swift */; };
 		5209DB1C292509C40054F9FD /* ProfileMyTicketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5209DB1B292509C40054F9FD /* ProfileMyTicketTableViewCell.swift */; };
 		5209DB1E292509E50054F9FD /* RecentReserveMyTicketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5209DB1D292509E50054F9FD /* RecentReserveMyTicketTableViewCell.swift */; };
 		5209DB2029250A110054F9FD /* ConcertMyTicketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5209DB1F29250A110054F9FD /* ConcertMyTicketTableViewCell.swift */; };
 		5209DB23292524C20054F9FD /* UserProfileButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5209DB22292524C20054F9FD /* UserProfileButtonView.swift */; };
+		529FE3AB292763FD00A8D7AE /* TicketCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529FE3AA292763FD00A8D7AE /* TicketCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,12 +73,13 @@
 		3B78BB552921FEEF002438F2 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		3B78BB572921FFBB002438F2 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		3B78BB592922006F002438F2 /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
-		5209DB172924DA760054F9FD /* MyTicketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTicketTableViewCell.swift; sourceTree = "<group>"; };
+		5209DB172924DA760054F9FD /* CellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellProtocol.swift; sourceTree = "<group>"; };
 		5209DB192924E4F20054F9FD /* MyTicketTabelViewHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTicketTabelViewHeaderView.swift; sourceTree = "<group>"; };
 		5209DB1B292509C40054F9FD /* ProfileMyTicketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMyTicketTableViewCell.swift; sourceTree = "<group>"; };
 		5209DB1D292509E50054F9FD /* RecentReserveMyTicketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentReserveMyTicketTableViewCell.swift; sourceTree = "<group>"; };
 		5209DB1F29250A110054F9FD /* ConcertMyTicketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcertMyTicketTableViewCell.swift; sourceTree = "<group>"; };
 		5209DB22292524C20054F9FD /* UserProfileButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileButtonView.swift; sourceTree = "<group>"; };
+		529FE3AA292763FD00A8D7AE /* TicketCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -350,10 +352,11 @@
 		5209DB24292524E60054F9FD /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				5209DB172924DA760054F9FD /* MyTicketTableViewCell.swift */,
+				5209DB172924DA760054F9FD /* CellProtocol.swift */,
 				5209DB1B292509C40054F9FD /* ProfileMyTicketTableViewCell.swift */,
 				5209DB1D292509E50054F9FD /* RecentReserveMyTicketTableViewCell.swift */,
 				5209DB1F29250A110054F9FD /* ConcertMyTicketTableViewCell.swift */,
+				529FE3AA292763FD00A8D7AE /* TicketCollectionViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -449,11 +452,12 @@
 			files = (
 				3B78BB542921FEAD002438F2 /* MyTicketViewController.swift in Sources */,
 				5209DB1E292509E50054F9FD /* RecentReserveMyTicketTableViewCell.swift in Sources */,
+				529FE3AB292763FD00A8D7AE /* TicketCollectionViewCell.swift in Sources */,
 				3B53F9BD2922013F006E3156 /* String.swift in Sources */,
 				3B78BB562921FEEF002438F2 /* TabBarController.swift in Sources */,
 				3B78BB502921FE57002438F2 /* SearchViewController.swift in Sources */,
 				3B78BB062921D47C002438F2 /* HomeViewController.swift in Sources */,
-				5209DB182924DA760054F9FD /* MyTicketTableViewCell.swift in Sources */,
+				5209DB182924DA760054F9FD /* CellProtocol.swift in Sources */,
 				5209DB1C292509C40054F9FD /* ProfileMyTicketTableViewCell.swift in Sources */,
 				3B53F9BB292200AC006E3156 /* UIFont+.swift in Sources */,
 				3B78BB582921FFBB002438F2 /* UIView+.swift in Sources */,
@@ -614,6 +618,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -641,6 +646,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

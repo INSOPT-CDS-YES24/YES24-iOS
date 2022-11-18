@@ -39,6 +39,9 @@ extension MyTicketViewController{
                         forHeaderFooterViewReuseIdentifier: MyTicketTabelViewHeaderView.className)
 //            $0.register(MyTicketTabelViewHeaderView.self) // 셀등록
             ProfileMyTicketTableViewCell.register(target: $0)
+            RecentReserveMyTicketTableViewCell.register(target: $0)
+            ConcertMyTicketTableViewCell.register(target: $0)
+            
             $0.translatesAutoresizingMaskIntoConstraints = false
             $0.separatorStyle = .none
         }
@@ -63,7 +66,11 @@ extension MyTicketViewController{
 }
 extension MyTicketViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        100
+        if (indexPath.section == 0 ) { return 100 }
+        else if (indexPath.section == 1 ) { return CGFloat(300).adjusted }
+        else if (indexPath.section == 1 ) { return 215}
+        else if (indexPath.section == 2 ) { return 100 }
+        else { return 0 }
     }
 }
 extension MyTicketViewController: UITableViewDataSource{
@@ -75,9 +82,21 @@ extension MyTicketViewController: UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = myTicketTableView.dequeueReusableCell(withIdentifier: ProfileMyTicketTableViewCell.className, for: indexPath) as? ProfileMyTicketTableViewCell else {return ProfileMyTicketTableViewCell()}
-        cell.setDataBind(user: user)
-        return cell
+        switch indexPath.section{
+        case 0:
+            guard let cell = myTicketTableView.dequeueReusableCell(withIdentifier: ProfileMyTicketTableViewCell.className, for: indexPath) as? ProfileMyTicketTableViewCell else {return ProfileMyTicketTableViewCell()}
+            cell.setDataBind(user: user)
+            return cell
+        case 1:
+            guard let cell = myTicketTableView.dequeueReusableCell(withIdentifier: RecentReserveMyTicketTableViewCell.className, for: indexPath) as? RecentReserveMyTicketTableViewCell else {return RecentReserveMyTicketTableViewCell()}
+            return cell
+////            cell.setDataBind(user: user)
+//        case 2:
+//            guard let cell = myTicketTableView.dequeueReusableCell(withIdentifier: RecentReserveMyTicketTableViewCell.className, for: indexPath) as? RecentReserveMyTicketTableViewCell else {return RecentReserveMyTicketTableViewCell()}
+//            return cell
+        default:
+            return UITableViewCell()
+        }
     }
 
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -86,17 +105,13 @@ extension MyTicketViewController: UITableViewDataSource{
         switch section{
         case 0:
             headerView.setDataBind(headerType: .userProfile, user: user)
-            headerView.backgroundColor = .red
         case 1:
             headerView.setDataBind(headerType: .recentReserve, user: user)
-            headerView.backgroundColor = .blue
         case 2:
             headerView.setDataBind(headerType: .myConcert, user: user)
-            headerView.backgroundColor = .gray
         default:
             break
         }
-        headerView.backgroundColor = .red
         return headerView
     }
     
@@ -131,6 +146,18 @@ extension UILabel{
         }
 }
 
+
+/// Double이나 Int도 마찬가지로 쓰시면 됩니다.
+
+extension CGFloat {
+    var adjusted: CGFloat {
+        let ratio: CGFloat = UIScreen.main.bounds.width / 390
+        let ratioH: CGFloat = UIScreen.main.bounds.height / 844
+        return ratio <= ratioH ? self * ratio : self * ratioH
+    }
+}
+
+
 //Model 옮기기
 struct User{
     var name: String
@@ -139,4 +166,5 @@ struct User{
     var advanceTicket: Int
     
 }
+
 
