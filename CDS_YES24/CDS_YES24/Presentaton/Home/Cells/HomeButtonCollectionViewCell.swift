@@ -11,11 +11,11 @@ class HomeButtonCollectionViewCell: UICollectionViewCell {
     
     static let identifier = "HomeButtonCollectionViewCell"
     
-    private let HomeButtonContainerView = UIView()
     private let buttonIcon = UIImageView()
     private let buttonLabel = UILabel().then {
         $0.textColor = Color.yesBrownishGrey
         $0.font = UIFont.pretendard(.medium, size: 14)
+        $0.textAlignment = .center
     }
     
     override init(frame: CGRect) {
@@ -32,23 +32,20 @@ extension HomeButtonCollectionViewCell {
     private func layout() {
         backgroundColor = .clear
         contentView.backgroundColor = .clear
-        [HomeButtonContainerView, buttonIcon, buttonLabel].forEach {
+        [buttonIcon, buttonLabel].forEach {
             contentView.addSubview($0)
-        }
-        
-        HomeButtonContainerView.addSubview(buttonIcon)
-        HomeButtonContainerView.addSubview(buttonLabel)
-        HomeButtonContainerView.snp.makeConstraints { make in
-            make.top.equalToSuperview()
-            make.centerY.equalToSuperview()
         }
         
         buttonIcon.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(24)
+//            make.leading.equalToSuperview().offset(37)
+            make.centerX.equalToSuperview()
         }
         
         buttonLabel.snp.makeConstraints { make in
             make.top.equalTo(buttonIcon.snp.bottom).offset(1)
+//            make.leading.equalTo(buttonIcon)
+            make.centerX.equalToSuperview()
         }
     }
     
