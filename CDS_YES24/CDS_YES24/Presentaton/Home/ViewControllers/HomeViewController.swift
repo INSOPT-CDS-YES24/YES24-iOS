@@ -50,6 +50,7 @@ extension HomeViewController {
                                      forCellReuseIdentifier: HomeButtonTableViewCell.identifier)
         ticketHomeTableView.register(YesPickTableViewCell.self,
                                      forCellReuseIdentifier: YesPickTableViewCell.identifier)
+        ticketHomeTableView.register(RecentSeeTableViewCell.self, forCellReuseIdentifier: RecentSeeTableViewCell.identifier)
     }
 }
 
@@ -67,10 +68,13 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
             return 484.0
         }
         else if (indexPath.section == 1){
-            return 247.0
+            return 245.0
         }
-        else if (indexPath.section == 2 || indexPath.section == 3){
-            return 270
+        else if (indexPath.section == 2){
+            return 400
+        }
+        else if (indexPath.section == 3){
+            return 400
         }
         else {
             return 0
@@ -95,8 +99,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
             return cell
         }
         else if (indexPath.section == 3){
-            guard let cell = ticketHomeTableView.dequeueReusableCell(withIdentifier: YesPickTableViewCell.identifier, for: indexPath) as?
-                    YesPickTableViewCell else { return YesPickTableViewCell()
+            guard let cell = ticketHomeTableView.dequeueReusableCell(withIdentifier: RecentSeeTableViewCell.identifier, for: indexPath) as?
+                    RecentSeeTableViewCell else { return RecentSeeTableViewCell()
             }
             return cell
         }

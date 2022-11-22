@@ -31,9 +31,10 @@ class YesPickCollectionViewCell: UICollectionViewCell {
     }
     
     private let yesPickPeriod = UILabel().then {
-        $0.textColor = Color.yesVeryLightGrey
+        $0.textColor = .systemGray
         $0.textAlignment = .left
         $0.font = UIFont.pretendard(.regular, size: 12)
+        $0.numberOfLines = 1
     }
     
     override init(frame: CGRect) {
@@ -49,7 +50,7 @@ class YesPickCollectionViewCell: UICollectionViewCell {
 extension YesPickCollectionViewCell {
     private func layout() {
         backgroundColor = .clear
-        contentView.backgroundColor = .red
+        contentView.backgroundColor = .clear
         [yesPickImage, yesPickContent, yesPickTitle, yesPickPeriod].forEach {
             contentView.addSubview($0)
         }
@@ -76,6 +77,8 @@ extension YesPickCollectionViewCell {
         yesPickPeriod.snp.makeConstraints { make in
             make.top.equalTo(yesPickTitle.snp.bottom).offset(5)
             make.centerX.equalToSuperview()
+            make.width.equalTo(126)
+            make.height.equalTo(12)
         }
     }
     
