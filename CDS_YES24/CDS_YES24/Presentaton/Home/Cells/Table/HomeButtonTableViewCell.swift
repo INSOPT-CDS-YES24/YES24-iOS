@@ -85,7 +85,7 @@ extension HomeButtonTableViewCell: UICollectionViewDelegate, UICollectionViewDat
 extension HomeButtonTableViewCell: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout:
                         UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let screenWidth = UIScreen.main.bounds.width
-        return CGSize(width: 120, height: 120)
+        // let screenWidth = UIScreen.main.bounds.width
+        return CGSize(width: 123, height: 122)
     }
 }
