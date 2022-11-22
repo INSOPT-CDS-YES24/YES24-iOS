@@ -27,4 +27,24 @@ public enum Image {
     // Search
     
     // MyTicket
+    public static func ticket()->[UIImage?] {
+        return [
+            UIImage(named: "ticket1"),
+            UIImage(named: "ticket1"),
+            UIImage(named: "ticket1"),
+            UIImage(named: "ticket1"),
+            UIImage(named: "ticket1"),
+            UIImage(named: "ticket1")
+        ]
+    }
+    
+    public static func myConcert() -> [UIImage?]{
+        return [
+            UIImage(named: "myConcert1"),
+            UIImage(named: "myConcert1"),
+            UIImage(named: "myConcert1"),
+            UIImage(named: "myConcert1"),
+            UIImage(named: "myConcert1"),
+        ]
+    }
 }

@@ -37,7 +37,6 @@ extension MyTicketViewController{
             $0.backgroundColor = .white
             $0.register(MyTicketTabelViewHeaderView.self,
                         forHeaderFooterViewReuseIdentifier: MyTicketTabelViewHeaderView.className)
-//            $0.register(MyTicketTabelViewHeaderView.self) // 셀등록
             ProfileMyTicketTableViewCell.register(target: $0)
             RecentReserveMyTicketTableViewCell.register(target: $0)
             ConcertMyTicketTableViewCell.register(target: $0)
@@ -67,8 +66,7 @@ extension MyTicketViewController{
 extension MyTicketViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if (indexPath.section == 0 ) { return 100 }
-        else if (indexPath.section == 1 ) { return CGFloat(300).adjusted }
-        else if (indexPath.section == 1 ) { return 215}
+        else if (indexPath.section == 1 ) { return CGFloat(215).adjusted}
         else if (indexPath.section == 2 ) { return 100 }
         else { return 0 }
     }
@@ -91,9 +89,9 @@ extension MyTicketViewController: UITableViewDataSource{
             guard let cell = myTicketTableView.dequeueReusableCell(withIdentifier: RecentReserveMyTicketTableViewCell.className, for: indexPath) as? RecentReserveMyTicketTableViewCell else {return RecentReserveMyTicketTableViewCell()}
             return cell
 ////            cell.setDataBind(user: user)
-//        case 2:
-//            guard let cell = myTicketTableView.dequeueReusableCell(withIdentifier: RecentReserveMyTicketTableViewCell.className, for: indexPath) as? RecentReserveMyTicketTableViewCell else {return RecentReserveMyTicketTableViewCell()}
-//            return cell
+        case 2:
+            guard let cell = myTicketTableView.dequeueReusableCell(withIdentifier: ConcertMyTicketTableViewCell.className, for: indexPath) as? ConcertMyTicketTableViewCell else {return ConcertMyTicketTableViewCell()}
+            return cell
         default:
             return UITableViewCell()
         }
@@ -120,51 +118,3 @@ extension MyTicketViewController: UITableViewDataSource{
     }
     
 }
-
-
-
-
-// 이 부분 나중에 합치기
-extension Const.String {
-    public static let myTicket = "마이티켓"
-    public static let recentReservedTicket = "최근 예매내역"
-    public static let myConcert = "나의 관람 공연"
-    
-    public static let yesPoint = "YES포인트"
-    public static let saleCoupon = "할인쿠폰"
-    public static let advanceTicket = "예매권"
-}
-
-
-extension UILabel{
-    func asColor(targetString: String, color: UIColor) {
-            let fullText = text ?? ""
-            let attributedString = NSMutableAttributedString(string: fullText)
-            let range = (fullText as NSString).range(of: targetString)
-            attributedString.addAttribute(.foregroundColor, value: color, range: range)
-            attributedText = attributedString
-        }
-}
-
-
-/// Double이나 Int도 마찬가지로 쓰시면 됩니다.
-
-extension CGFloat {
-    var adjusted: CGFloat {
-        let ratio: CGFloat = UIScreen.main.bounds.width / 390
-        let ratioH: CGFloat = UIScreen.main.bounds.height / 844
-        return ratio <= ratioH ? self * ratio : self * ratioH
-    }
-}
-
-
-//Model 옮기기
-struct User{
-    var name: String
-    var yesPoint: Int
-    var saleCoupon: Int
-    var advanceTicket: Int
-    
-}
-
-

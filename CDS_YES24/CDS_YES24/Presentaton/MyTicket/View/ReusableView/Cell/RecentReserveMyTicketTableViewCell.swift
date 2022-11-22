@@ -9,13 +9,15 @@ import UIKit
 
 class RecentReserveMyTicketTableViewCell: UITableViewCell, UITableViewRegisterable {
     
+    private let images: [UIImage?] = Image.ticket()
+    
     static var isFromNib = false
     
     private lazy var ticketCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         layout.minimumLineSpacing = 0
-        layout.sectionInset = UIEdgeInsets(top: 5, left: 0, bottom: 0, right: 0)
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.showsHorizontalScrollIndicator = false
@@ -29,10 +31,6 @@ class RecentReserveMyTicketTableViewCell: UITableViewCell, UITableViewRegisterab
         setUI()
         setLayout()
         
-
-        for i in 0...3 {
-            
-        }
     }
     
     required init?(coder: NSCoder) {
@@ -56,8 +54,7 @@ extension RecentReserveMyTicketTableViewCell{
     private func setLayout(){
         self.contentView.addSubview(ticketCollectionView)
         ticketCollectionView.snp.makeConstraints { make in
-            make.top.leading.trailing.equalToSuperview()
-            make.bottom.equalToSuperview().offset(-43)
+            make.top.leading.trailing.bottom.equalToSuperview()
         }
         
         
@@ -66,17 +63,24 @@ extension RecentReserveMyTicketTableViewCell{
 extension RecentReserveMyTicketTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return images.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = ticketCollectionView.dequeueReusableCell(withReuseIdentifier: TicketCollectionViewCell.className, for: indexPath) as? TicketCollectionViewCell else { return TicketCollectionViewCell() }
+        cell.setDataBind(ticketImage: images[indexPath.row],
+                         concertTitle: "검정치마 클럽 공연",
+                         reserveID: "Y9982491677",
+                         reservedDate: "2022.11.08",
+                         concertDate: "2022.11.12.토 19시 00분",
+                         concertPlace: "예술의전당 CJ 토월극장",
+                         seatNum: "1층 B블록 9열 015번")
         return cell
     }
 }
 
 extension RecentReserveMyTicketTableViewCell: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        CGSize(width: contentView.frame.size.width , height: 200)
+        CGSize(width: contentView.frame.size.width , height: CGFloat(167).adjusted)
     }
 }

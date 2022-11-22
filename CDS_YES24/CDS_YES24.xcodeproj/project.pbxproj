@@ -32,7 +32,6 @@
 		3B78BB4A2921E5C8002438F2 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 3B78BB492921E5C8002438F2 /* Kingfisher */; };
 		3B78BB502921FE57002438F2 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B78BB4F2921FE57002438F2 /* SearchViewController.swift */; };
 		3B78BB522921FE7F002438F2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B78BB512921FE7F002438F2 /* DetailViewController.swift */; };
-		3B78BB542921FEAD002438F2 /* MyTicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B78BB532921FEAD002438F2 /* MyTicketViewController.swift */; };
 		3B78BB562921FEEF002438F2 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B78BB552921FEEF002438F2 /* TabBarController.swift */; };
 		3B78BB582921FFBB002438F2 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B78BB572921FFBB002438F2 /* UIView+.swift */; };
 		3B78BB5A2922006F002438F2 /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B78BB592922006F002438F2 /* UIStackView+.swift */; };
@@ -42,7 +41,14 @@
 		5209DB1E292509E50054F9FD /* RecentReserveMyTicketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5209DB1D292509E50054F9FD /* RecentReserveMyTicketTableViewCell.swift */; };
 		5209DB2029250A110054F9FD /* ConcertMyTicketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5209DB1F29250A110054F9FD /* ConcertMyTicketTableViewCell.swift */; };
 		5209DB23292524C20054F9FD /* UserProfileButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5209DB22292524C20054F9FD /* UserProfileButtonView.swift */; };
+		525BB710292A8D9600B99358 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525BB70F292A8D9600B99358 /* User.swift */; };
+		525BB712292A8DB700B99358 /* CGFloat+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525BB711292A8DB700B99358 /* CGFloat+.swift */; };
+		525BB714292A8DCD00B99358 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525BB713292A8DCD00B99358 /* UILabel+.swift */; };
+		525BB716292A8E3800B99358 /* MyTicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525BB715292A8E3800B99358 /* MyTicketViewController.swift */; };
+		525BB719292A91D100B99358 /* TicketInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525BB718292A91D100B99358 /* TicketInfoView.swift */; };
 		529FE3AB292763FD00A8D7AE /* TicketCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529FE3AA292763FD00A8D7AE /* TicketCollectionViewCell.swift */; };
+		52EA881E292B662B007F9B23 /* Int+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA881D292B662B007F9B23 /* Int+.swift */; };
+		52EA8820292B6EE3007F9B23 /* MyConcertCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA881F292B6EE3007F9B23 /* MyConcertCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,7 +75,6 @@
 		3B78BB3D2921E26E002438F2 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		3B78BB4F2921FE57002438F2 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		3B78BB512921FE7F002438F2 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		3B78BB532921FEAD002438F2 /* MyTicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTicketViewController.swift; sourceTree = "<group>"; };
 		3B78BB552921FEEF002438F2 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		3B78BB572921FFBB002438F2 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		3B78BB592922006F002438F2 /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
@@ -79,7 +84,14 @@
 		5209DB1D292509E50054F9FD /* RecentReserveMyTicketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentReserveMyTicketTableViewCell.swift; sourceTree = "<group>"; };
 		5209DB1F29250A110054F9FD /* ConcertMyTicketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcertMyTicketTableViewCell.swift; sourceTree = "<group>"; };
 		5209DB22292524C20054F9FD /* UserProfileButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileButtonView.swift; sourceTree = "<group>"; };
+		525BB70F292A8D9600B99358 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		525BB711292A8DB700B99358 /* CGFloat+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+.swift"; sourceTree = "<group>"; };
+		525BB713292A8DCD00B99358 /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
+		525BB715292A8E3800B99358 /* MyTicketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTicketViewController.swift; sourceTree = "<group>"; };
+		525BB718292A91D100B99358 /* TicketInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketInfoView.swift; sourceTree = "<group>"; };
 		529FE3AA292763FD00A8D7AE /* TicketCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketCollectionViewCell.swift; sourceTree = "<group>"; };
+		52EA881D292B662B007F9B23 /* Int+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+.swift"; sourceTree = "<group>"; };
+		52EA881F292B6EE3007F9B23 /* MyConcertCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyConcertCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +204,7 @@
 		3B78BB1C2921D673002438F2 /* MyTicket */ = {
 			isa = PBXGroup;
 			children = (
+				525BB70E292A8D8F00B99358 /* Model */,
 				5209DB21292524B00054F9FD /* View */,
 				3B78BB4E2921FDF3002438F2 /* ViewControlelrs */,
 			);
@@ -289,9 +302,12 @@
 			isa = PBXGroup;
 			children = (
 				3B78BB572921FFBB002438F2 /* UIView+.swift */,
+				52EA881D292B662B007F9B23 /* Int+.swift */,
 				3B78BB592922006F002438F2 /* UIStackView+.swift */,
 				3B53F9BA292200AC006E3156 /* UIFont+.swift */,
 				3B53F9C329222F94006E3156 /* UITabBar+.swift */,
+				525BB711292A8DB700B99358 /* CGFloat+.swift */,
+				525BB713292A8DCD00B99358 /* UILabel+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -326,7 +342,7 @@
 		3B78BB4E2921FDF3002438F2 /* ViewControlelrs */ = {
 			isa = PBXGroup;
 			children = (
-				3B78BB532921FEAD002438F2 /* MyTicketViewController.swift */,
+				525BB715292A8E3800B99358 /* MyTicketViewController.swift */,
 			);
 			path = ViewControlelrs;
 			sourceTree = "<group>";
@@ -345,6 +361,7 @@
 			children = (
 				5209DB22292524C20054F9FD /* UserProfileButtonView.swift */,
 				5209DB162924DA370054F9FD /* ReusableView */,
+				525BB718292A91D100B99358 /* TicketInfoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -355,10 +372,19 @@
 				5209DB172924DA760054F9FD /* CellProtocol.swift */,
 				5209DB1B292509C40054F9FD /* ProfileMyTicketTableViewCell.swift */,
 				5209DB1D292509E50054F9FD /* RecentReserveMyTicketTableViewCell.swift */,
-				5209DB1F29250A110054F9FD /* ConcertMyTicketTableViewCell.swift */,
 				529FE3AA292763FD00A8D7AE /* TicketCollectionViewCell.swift */,
+				5209DB1F29250A110054F9FD /* ConcertMyTicketTableViewCell.swift */,
+				52EA881F292B6EE3007F9B23 /* MyConcertCollectionViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		525BB70E292A8D8F00B99358 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				525BB70F292A8D9600B99358 /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -450,26 +476,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B78BB542921FEAD002438F2 /* MyTicketViewController.swift in Sources */,
 				5209DB1E292509E50054F9FD /* RecentReserveMyTicketTableViewCell.swift in Sources */,
 				529FE3AB292763FD00A8D7AE /* TicketCollectionViewCell.swift in Sources */,
 				3B53F9BD2922013F006E3156 /* String.swift in Sources */,
 				3B78BB562921FEEF002438F2 /* TabBarController.swift in Sources */,
+				525BB716292A8E3800B99358 /* MyTicketViewController.swift in Sources */,
 				3B78BB502921FE57002438F2 /* SearchViewController.swift in Sources */,
 				3B78BB062921D47C002438F2 /* HomeViewController.swift in Sources */,
 				5209DB182924DA760054F9FD /* CellProtocol.swift in Sources */,
 				5209DB1C292509C40054F9FD /* ProfileMyTicketTableViewCell.swift in Sources */,
+				525BB712292A8DB700B99358 /* CGFloat+.swift in Sources */,
 				3B53F9BB292200AC006E3156 /* UIFont+.swift in Sources */,
 				3B78BB582921FFBB002438F2 /* UIView+.swift in Sources */,
+				52EA8820292B6EE3007F9B23 /* MyConcertCollectionViewCell.swift in Sources */,
 				3B78BB3C2921DDAA002438F2 /* Color.swift in Sources */,
 				3B78BB022921D47C002438F2 /* AppDelegate.swift in Sources */,
 				3B78BB042921D47C002438F2 /* SceneDelegate.swift in Sources */,
 				5209DB2029250A110054F9FD /* ConcertMyTicketTableViewCell.swift in Sources */,
+				525BB714292A8DCD00B99358 /* UILabel+.swift in Sources */,
 				3B78BB5A2922006F002438F2 /* UIStackView+.swift in Sources */,
+				525BB719292A91D100B99358 /* TicketInfoView.swift in Sources */,
+				52EA881E292B662B007F9B23 /* Int+.swift in Sources */,
 				3B78BB3E2921E26E002438F2 /* Images.swift in Sources */,
 				3B53F9C2292224C6006E3156 /* TabBarItem.swift in Sources */,
 				5209DB23292524C20054F9FD /* UserProfileButtonView.swift in Sources */,
 				3B78BB522921FE7F002438F2 /* DetailViewController.swift in Sources */,
+				525BB710292A8D9600B99358 /* User.swift in Sources */,
 				3B53F9C02922082E006E3156 /* Const.swift in Sources */,
 				3B53F9C429222F94006E3156 /* UITabBar+.swift in Sources */,
 				5209DB1A2924E4F20054F9FD /* MyTicketTabelViewHeaderView.swift in Sources */,

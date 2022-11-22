@@ -12,13 +12,13 @@ class TicketCollectionViewCell: UICollectionViewCell, UICollectionViewRegisterab
     static var isFromNib = false
     
     private let ticketImageView: UIImageView = UIImageView()
-    private let ticketInfoView: UIView = UIView()
+    private let ticketInfoView: TicketInfoView = TicketInfoView(frame: .zero)
     
     
     override init(frame: CGRect) {
         super.init(frame: .zero)
-        setUI()
         setLayout()
+        setUI()
     }
     
     required init?(coder: NSCoder) {
@@ -28,19 +28,32 @@ class TicketCollectionViewCell: UICollectionViewCell, UICollectionViewRegisterab
 }
 
 extension TicketCollectionViewCell{
+    public func setDataBind(ticketImage: UIImage?, concertTitle: String, reserveID: String,
+                            reservedDate: String, concertDate: String,
+                            concertPlace: String, seatNum: String){
+        
+        ticketImageView.image = ticketImage
+        ticketInfoView.setDataBind(concertTitle: concertTitle,
+                                   reserveID: reserveID,
+                                   reservedDate: reservedDate,
+                                   concertDate: concertDate,
+                                   concertPlace: concertPlace,
+                                   seatNum: seatNum)
+    }
     private func setUI(){
-        ticketImageView.do {
-            $0.backgroundColor = .red
-            $0.layer.cornerRadius = 20
-        }
-        ticketInfoView.do {
-            $0.backgroundColor = .blue
-        }
+        ticketImageView.layer.cornerRadius = 5
+        ticketImageView.clipsToBounds = true
+        ticketInfoView.layer.cornerRadius = 5
+        ticketInfoView.clipsToBounds = true
+        contentView.layer.shadowColor = .init(red: 0, green: 0, blue: 0, alpha: 0.1)
+        contentView.layer.shadowOpacity = 1
+        contentView.layer.shadowRadius = 2
+        contentView.layer.shadowOffset = CGSize(width: 0, height: 0)
     }
     private func setLayout(){
         self.contentView.addSubViews(ticketImageView, ticketInfoView)
         ticketImageView.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(40)
+            make.top.equalToSuperview().offset(CGFloat(16).adjusted)
             make.leading.equalToSuperview().offset(20)
             make.width.equalTo(CGFloat(116).adjusted)
             make.height.equalTo(CGFloat(167).adjusted)
