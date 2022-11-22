@@ -33,10 +33,10 @@ class HomeButtonTableViewCell: UITableViewCell {
     var homeButtonModel: [HomeButtonModel] = [
         HomeButtonModel(buttonIcon: "homeIcConcert", buttonLabel: "콘서트"),
         HomeButtonModel(buttonIcon: "homeIcMusical", buttonLabel: "뮤지컬"),
-        HomeButtonModel(buttonIcon: "homeIcConcert", buttonLabel: "연극"),
-        HomeButtonModel(buttonIcon: "homeIcConcert", buttonLabel: "클래식/무용"),
-        HomeButtonModel(buttonIcon: "homeIcConcert", buttonLabel: "전시/행사"),
-        HomeButtonModel(buttonIcon: "homeIcConcert", buttonLabel: "아동/가족"),
+        HomeButtonModel(buttonIcon: "homeIcPlay", buttonLabel: "연극"),
+        HomeButtonModel(buttonIcon: "homeIcClassic", buttonLabel: "클래식/무용"),
+        HomeButtonModel(buttonIcon: "homeIcDisplay", buttonLabel: "전시/행사"),
+        HomeButtonModel(buttonIcon: "homeIcChild", buttonLabel: "아동/가족"),
     ]
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -86,6 +86,6 @@ extension HomeButtonTableViewCell: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout:
                         UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let screenWidth = UIScreen.main.bounds.width
-        return CGSize(width: 124, height: 125)
+        return CGSize(width: 120, height: 120)
     }
 }

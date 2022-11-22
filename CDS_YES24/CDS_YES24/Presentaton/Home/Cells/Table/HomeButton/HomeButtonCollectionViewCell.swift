@@ -7,6 +7,10 @@
 
 import UIKit
 
+import SnapKit
+import SwiftyColor
+import Then
+
 class HomeButtonCollectionViewCell: UICollectionViewCell {
     
     static let identifier = "HomeButtonCollectionViewCell"
@@ -32,6 +36,7 @@ extension HomeButtonCollectionViewCell {
     private func layout() {
         backgroundColor = .clear
         contentView.backgroundColor = .clear
+        
         [buttonIcon, buttonLabel].forEach {
             contentView.addSubview($0)
         }

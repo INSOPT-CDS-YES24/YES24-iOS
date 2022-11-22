@@ -19,7 +19,7 @@ final class HomeViewController: UIViewController {
         tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
     }()
-
+    
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,10 +36,10 @@ extension HomeViewController {
         view.addSubview(ticketHomeTableView)
         
         ticketHomeTableView.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
-//            make.top.bottom.equalToSuperview()
-//            make.leading.trailing.equalToSuperview()
-//            make.height.equalTo(1549)
+            //make.edges.equalToSuperview()
+            make.top.equalToSuperview()
+            make.leading.trailing.equalToSuperview()
+            make.bottom.equalToSuperview()
         }
     }
     
@@ -64,7 +64,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if (indexPath.section == 0){
-            return 515.0
+            return 484.0
         }
         else if (indexPath.section == 1){
             return 247.0

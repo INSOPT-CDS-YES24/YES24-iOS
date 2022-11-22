@@ -28,6 +28,7 @@ public enum Image {
     public static let homeLogo = UIImage(named: "homeLogoYes24Ticket")!
     public static let rightButton = UIImage(named: "homeIcRight")!
     public static let leftButton = UIImage(named: "homeIcLeft")!
+    public static let homeBackground = UIImage(named: "homeImgBackground")!
     
     
     // Detail

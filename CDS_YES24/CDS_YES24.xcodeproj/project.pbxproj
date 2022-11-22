@@ -12,6 +12,8 @@
 		033304712927789F00CCF43A /* YesPickTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033304702927789F00CCF43A /* YesPickTableViewCell.swift */; };
 		033304752927BDFB00CCF43A /* HomeButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033304742927BDFB00CCF43A /* HomeButtonCollectionViewCell.swift */; };
 		033304782927C35100CCF43A /* HomeButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033304772927C35100CCF43A /* HomeButtonModel.swift */; };
+		0399BC86292BBC1E004B1637 /* ShowGalleryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0399BC85292BBC1E004B1637 /* ShowGalleryModel.swift */; };
+		0399BC88292BC4C0004B1637 /* ShowGalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0399BC87292BC4C0004B1637 /* ShowGalleryCollectionViewCell.swift */; };
 		3B53F9BB292200AC006E3156 /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B53F9BA292200AC006E3156 /* UIFont+.swift */; };
 		3B53F9BD2922013F006E3156 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B53F9BC2922013F006E3156 /* String.swift */; };
 		3B53F9C02922082E006E3156 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B53F9BF2922082E006E3156 /* Const.swift */; };
@@ -49,6 +51,8 @@
 		033304702927789F00CCF43A /* YesPickTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YesPickTableViewCell.swift; sourceTree = "<group>"; };
 		033304742927BDFB00CCF43A /* HomeButtonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButtonCollectionViewCell.swift; sourceTree = "<group>"; };
 		033304772927C35100CCF43A /* HomeButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButtonModel.swift; sourceTree = "<group>"; };
+		0399BC85292BBC1E004B1637 /* ShowGalleryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowGalleryModel.swift; sourceTree = "<group>"; };
+		0399BC87292BC4C0004B1637 /* ShowGalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowGalleryCollectionViewCell.swift; sourceTree = "<group>"; };
 		3B53F9BA292200AC006E3156 /* UIFont+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
 		3B53F9BC2922013F006E3156 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		3B53F9BF2922082E006E3156 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
@@ -96,11 +100,21 @@
 		033304762927BE3100CCF43A /* Table */ = {
 			isa = PBXGroup;
 			children = (
+				0399BC2F292BABBB004B1637 /* HomeButton */,
 				0333046C2927770C00CCF43A /* ShowGalleryTableViewCell.swift */,
 				0333046E2927788F00CCF43A /* HomeButtonTableViewCell.swift */,
 				033304702927789F00CCF43A /* YesPickTableViewCell.swift */,
+				0399BC87292BC4C0004B1637 /* ShowGalleryCollectionViewCell.swift */,
 			);
 			path = Table;
+			sourceTree = "<group>";
+		};
+		0399BC2F292BABBB004B1637 /* HomeButton */ = {
+			isa = PBXGroup;
+			children = (
+				033304742927BDFB00CCF43A /* HomeButtonCollectionViewCell.swift */,
+			);
+			path = HomeButton;
 			sourceTree = "<group>";
 		};
 		3B78BAF52921D47C002438F2 = {
@@ -215,7 +229,6 @@
 			isa = PBXGroup;
 			children = (
 				033304762927BE3100CCF43A /* Table */,
-				033304742927BDFB00CCF43A /* HomeButtonCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -224,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				033304772927C35100CCF43A /* HomeButtonModel.swift */,
+				0399BC85292BBC1E004B1637 /* ShowGalleryModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -439,9 +453,11 @@
 				3B78BB582921FFBB002438F2 /* UIView+.swift in Sources */,
 				3B78BB3C2921DDAA002438F2 /* Color.swift in Sources */,
 				0333046F2927788F00CCF43A /* HomeButtonTableViewCell.swift in Sources */,
+				0399BC86292BBC1E004B1637 /* ShowGalleryModel.swift in Sources */,
 				3B78BB022921D47C002438F2 /* AppDelegate.swift in Sources */,
 				0333046D2927770C00CCF43A /* ShowGalleryTableViewCell.swift in Sources */,
 				3B78BB042921D47C002438F2 /* SceneDelegate.swift in Sources */,
+				0399BC88292BC4C0004B1637 /* ShowGalleryCollectionViewCell.swift in Sources */,
 				3B78BB5A2922006F002438F2 /* UIStackView+.swift in Sources */,
 				3B78BB3E2921E26E002438F2 /* Images.swift in Sources */,
 				3B53F9C2292224C6006E3156 /* TabBarItem.swift in Sources */,
