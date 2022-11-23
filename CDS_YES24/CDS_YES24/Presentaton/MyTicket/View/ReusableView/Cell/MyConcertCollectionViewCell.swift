@@ -36,13 +36,16 @@ extension MyConcertCollectionViewCell {
         ticketImageView.contentMode = .scaleAspectFit
         ticketImageView.layer.cornerRadius = 5
         genreButton.titleLabel?.font = .pretendard(.medium, size: 12)
+        genreButton.contentHorizontalAlignment = .left
+        genreButton.setTitleColor(Color.yesMain, for: .normal)
         concertTitleLabel.font = .pretendard(.medium, size: 14)
-        concertTitleLabel.numberOfLines = 0
+        concertTitleLabel.numberOfLines = 2
     }
     private func setLayout() {
         [ticketImageView, genreButton, concertTitleLabel].forEach {
             contentView.addSubview($0)
         }
+        
         ticketImageView.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(5)
             make.leading.trailing.equalToSuperview()
@@ -54,7 +57,7 @@ extension MyConcertCollectionViewCell {
             make.height.equalTo(12)
         }
         concertTitleLabel.snp.makeConstraints { make in
-            make.leading.equalToSuperview()
+            make.leading.trailing.equalToSuperview()
             make.top.equalTo(genreButton.snp.bottom)
         }
     }

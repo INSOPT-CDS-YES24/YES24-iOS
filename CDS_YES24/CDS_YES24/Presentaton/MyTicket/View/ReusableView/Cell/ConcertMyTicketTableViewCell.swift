@@ -16,8 +16,11 @@ class ConcertMyTicketTableViewCell: UITableViewCell, UITableViewRegisterable {
     private lazy var myConcertCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
+        layout.minimumLineSpacing = 12
+        layout.sectionInset = UIEdgeInsets(top: 5, left: 20, bottom: 50, right: 20)
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
+        collectionView.showsHorizontalScrollIndicator = false
         MyConcertCollectionViewCell.register(target: collectionView)
         return collectionView
     }()
@@ -43,7 +46,7 @@ extension ConcertMyTicketTableViewCell{
         myConcertCollectionView.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(5)
             make.leading.trailing.equalToSuperview()
-            make.height.equalTo(CGFloat(211).adjusted)
+            make.height.equalTo(CGFloat(266).adjusted)
         }
     }
 }
@@ -55,7 +58,7 @@ extension ConcertMyTicketTableViewCell: UICollectionViewDelegate, UICollectionVi
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = myConcertCollectionView.dequeueReusableCell(withReuseIdentifier: MyConcertCollectionViewCell.className, for: indexPath) as? MyConcertCollectionViewCell else { return UICollectionViewCell() }
         
-        cell.setDataBind(concertImage: images[indexPath.row]!, genre: "콘서트", title: "NCT 127 2ND")
+        cell.setDataBind(concertImage: images[indexPath.row]!, genre: "콘서트", title: "NCT 127 2ND TOUR ‘NEO CI...")
         return cell
     }
 }
