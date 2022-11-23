@@ -11,6 +11,10 @@ import SnapKit
 import Then
 
 final class DetailViewController: UIViewController {
+//    func heartButtonDidTap(isSeleted: Bool) {
+//        <#code#>
+//    }
+//
     
     // MARK: - UI Components
     private let naviView = NaviView()
@@ -33,6 +37,7 @@ extension DetailViewController {
             $0.backgroundColor = .white
             $0.showsVerticalScrollIndicator = false
             $0.separatorStyle = .singleLine
+            $0.bounces = false
             $0.contentInsetAdjustmentBehavior = .never
         }
     }
@@ -89,13 +94,12 @@ extension DetailViewController: UITableViewDelegate, UITableViewDataSource {
         case 1:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: InfoTableViewCell.className, for: indexPath) as? InfoTableViewCell else {return UITableViewCell()}
             cell.selectionStyle = .none
-            cell.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: CGRectGetWidth(tableView.bounds));
+            cell.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: CGRectGetWidth(tableView.bounds))
             return cell
         case 2:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: TicketTableViewCell.className, for: indexPath) as? TicketTableViewCell else {return UITableViewCell()}
             cell.selectionStyle = .none
             cell.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-            
             return cell
         case 3:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: ActorTableViewCell.className, for: indexPath) as? ActorTableViewCell else {return UITableViewCell()}
@@ -118,6 +122,25 @@ extension DetailViewController: UITableViewDelegate, UITableViewDataSource {
             return cell
         default:
             return UITableViewCell()
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.section {
+        case 4:
+            let cell = tableView.cellForRow(at: indexPath) as? DiscountTableViewCell
+            tableView.performBatchUpdates {
+                cell?.isFold.toggle()
+                cell?.updateLayout()
+            }
+        case 5:
+            let cell = tableView.cellForRow(at: indexPath) as? ShowDetailTableViewCell
+            tableView.performBatchUpdates {
+                cell?.isFold.toggle()
+                cell?.updateLayout()
+            }
+        default:
+            return
         }
     }
     

@@ -54,7 +54,7 @@ extension TicketTableViewCell {
             $0.axis = .horizontal
             $0.spacing = 24
             $0.distribution = .fill
-            $0.isLayoutMarginsRelativeArrangement = true
+            $0.isLayoutMarginsRelativeArrangement  = true
         }
         
         seatViewStackView.do {
@@ -66,7 +66,7 @@ extension TicketTableViewCell {
         [seatNameStackView, seatPriceStackView].forEach {
             $0.axis = .vertical
             $0.spacing = 8
-            $0.distribution = .fill
+            $0.distribution = .fillEqually
         }
         
         [subInfoTitle, qnaTitle].forEach {
@@ -118,65 +118,69 @@ extension TicketTableViewCell {
         [infoShowTitle, subInfoTitle, qnaTitle].forEach {
             titleStackView.addArrangedSubview($0)
         }
+        
         [vipView, rView, sView, aView].forEach {
-            seatViewStackView.addArrangedSubview($0)
             $0.snp.makeConstraints {
                 $0.size.equalTo(14)
             }
+            seatViewStackView.addArrangedSubview($0)
         }
         
         [vipLabel, rLabel, sLabel, aLabel].forEach {
             seatNameStackView.addArrangedSubview($0)
         }
-        
+
         [vipPriceLabel, rPriceLabel, sPriceLabel, aPriceLabel].forEach {
             seatPriceStackView.addArrangedSubview($0)
         }
         
-        contentView.addSubViews(titleStackView, lineView, blueLineView,
-                                priceInfoLabel, seatViewStackView, seatNameStackView,
-                                seatPriceStackView
-        )
+        contentView.addSubViews(titleStackView, priceInfoLabel, lineView,
+                                blueLineView, seatViewStackView, seatNameStackView,
+                                seatPriceStackView)
         
         titleStackView.snp.makeConstraints {
             $0.top.equalToSuperview()
             $0.leading.equalToSuperview().inset(20)
+            $0.height.lessThanOrEqualTo(30).priority(.required)
         }
-        
+
         lineView.snp.makeConstraints {
             $0.top.equalTo(titleStackView.snp.bottom).offset(5)
             $0.directionalHorizontalEdges.equalToSuperview()
             $0.height.equalTo(2)
         }
-        
+
         blueLineView.snp.makeConstraints {
-            $0.top.equalTo(lineView)
+            $0.top.equalTo(lineView.snp.top)
             $0.height.equalTo(2)
             $0.leading.equalTo(21)
-            $0.width.equalTo(56)
+            $0.width.equalTo(infoShowTitle.snp.width)
         }
-        
+
         priceInfoLabel.snp.makeConstraints {
-            $0.top.equalTo(lineView.snp.bottom).offset(25)
+            $0.top.equalTo(titleStackView.snp.bottom).offset(31)
             $0.leading.equalToSuperview().inset(20)
+            $0.height.equalTo(17)
         }
         
         seatViewStackView.snp.makeConstraints {
             $0.top.equalTo(priceInfoLabel.snp.bottom).offset(17)
             $0.leading.equalToSuperview().inset(20)
-            $0.bottom.equalToSuperview().inset(26)
+            $0.bottom.equalToSuperview().inset(26).priority(.high)
         }
-        
+
         seatNameStackView.snp.makeConstraints {
             $0.top.equalTo(priceInfoLabel.snp.bottom).offset(15)
             $0.leading.equalTo(seatViewStackView.snp.trailing).offset(10)
-            $0.bottom.equalToSuperview().inset(24)
+            $0.bottom.equalToSuperview().inset(24).priority(.high)
+            $0.height.equalTo(96)
         }
-        
+
         seatPriceStackView.snp.makeConstraints {
             $0.top.equalTo(priceInfoLabel.snp.bottom).offset(15)
             $0.leading.equalTo(seatNameStackView.snp.trailing).offset(42)
-            $0.bottom.equalToSuperview().inset(24)
+            $0.bottom.equalToSuperview().inset(24).priority(.high)
+            $0.height.equalTo(96)
         }
     }
 }

@@ -14,7 +14,7 @@ class InfoTableViewCell: UITableViewCell, UITableViewRegisterable {
     static var isFromNib: Bool = false
     
     private let titleLabel = UILabel()
-    private let heartButton = UIButton()
+    let heartButton = UIButton()
     private let shareButton = UIButton()
     private let calendarIcon = UIImageView()
     private let placeIcon = UIImageView()
@@ -41,7 +41,8 @@ extension InfoTableViewCell {
         }
         
         heartButton.do {
-            $0.setImage(isSelected ? Image.fillHeart : Image.heart, for: .normal)
+            $0.setImage(Image.heart, for: .normal)
+            $0.addTarget(self, action: #selector(didTapHeartButton), for: .touchUpInside)
         }
         
         shareButton.setImage(Image.shareButton, for: .normal)
@@ -100,5 +101,10 @@ extension InfoTableViewCell {
             $0.leading.equalTo(placeIcon.snp.trailing).offset(9)
             $0.bottom.equalToSuperview().inset(20)
         }
+    }
+    
+    @objc func didTapHeartButton(_ sender: UIButton) {
+        var backgroundImage = sender.isSelected ? Image.fillHeart : Image.heart
+        heartButton.setImage(backgroundImage, for: .normal)
     }
 }

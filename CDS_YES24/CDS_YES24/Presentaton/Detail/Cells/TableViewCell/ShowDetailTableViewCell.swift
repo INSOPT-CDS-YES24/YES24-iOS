@@ -19,6 +19,7 @@ class ShowDetailTableViewCell: UITableViewCell, UITableViewRegisterable {
     private let stackView = UIStackView()
     
     var isFold: Bool = false
+    var clickedEvent: ((Int) -> Void)?
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -46,7 +47,11 @@ extension ShowDetailTableViewCell {
             $0.distribution = .fill
         }
         
-        posterImageView.image = Image.detailPoster
+        posterImageView.do {
+            $0.image = Image.detailPoster
+            $0.clipsToBounds = true
+            $0.contentMode = .top
+        }
     }
     
     private func setLayout() {
@@ -68,6 +73,12 @@ extension ShowDetailTableViewCell {
         stackView.snp.makeConstraints {
             $0.top.equalTo(titleLabel.snp.bottom).offset(26)
             $0.leading.trailing.bottom.equalToSuperview()
+        }
+    }
+    
+    func updateLayout() {
+        posterImageView.snp.updateConstraints {
+            $0.height.equalTo(isFold ? 194 : 612)
         }
     }
 }

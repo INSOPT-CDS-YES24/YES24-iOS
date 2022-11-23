@@ -22,6 +22,7 @@ class DiscountTableViewCell: UITableViewCell, UITableViewRegisterable {
     private let stackView = UIStackView()
     
     var isFold: Bool = false
+    var clickedEvent: ((Bool) -> Void)?
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -59,6 +60,8 @@ extension DiscountTableViewCell {
         
         couponImageView.do {
             $0.image = Image.couponDetail
+            $0.contentMode = .top
+            $0.clipsToBounds = true
         }
         
         stackView.do {
@@ -97,6 +100,10 @@ extension DiscountTableViewCell {
             $0.height.equalTo(46)
         }
         
+        couponImageView.snp.makeConstraints {
+            $0.height.equalTo(612)
+        }
+        
         expandButton.snp.makeConstraints {
             $0.height.equalTo(60)
         }
@@ -104,13 +111,13 @@ extension DiscountTableViewCell {
         stackView.snp.makeConstraints {
             $0.top.equalTo(couponView.snp.bottom).offset(24)
             $0.leading.trailing.bottom.equalToSuperview()
-            $0.bottom.equalToSuperview()
+            $0.bottom.lessThanOrEqualToSuperview()
         }
-//
-//        expandButton.snp.makeConstraints {
-//            $0.top.equalTo(couponImageView.snp.bottom)
-//            $0.directionalHorizontalEdges.equalToSuperview()
-//            $0.height.equalTo(60)
-//        }
+    }
+    
+    func updateLayout() {
+        couponImageView.snp.updateConstraints {
+            $0.height.equalTo(isFold ? 194 : 612)
+        }
     }
 }

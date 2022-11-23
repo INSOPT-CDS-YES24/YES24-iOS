@@ -18,6 +18,7 @@ class ActorTableViewCell: UITableViewCell, UITableViewRegisterable {
     private lazy var actorCollectionView: UICollectionView = {
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: createLayout())
         collectionView.showsHorizontalScrollIndicator = false
+        collectionView.alwaysBounceVertical = false
         return collectionView
     }()
     private let actorDetailButton = UIButton()
