@@ -21,8 +21,22 @@ public enum Image {
     // Home
     
     // Detail
-    public static let heart = UIImage(named: "heart")!
-    public static let fillHeart = UIImage(named: "fillHeart")!
+    static let heart = UIImage(named: "heart")!
+    static let fillHeart = UIImage(named: "fillHeart")!
+    static let backButton = UIImage(named: "icHome")!
+    static let background = UIImage(named: "background")!
+    static let detailButton = UIImage(named: "icRight")!
+    static let shareButton = UIImage(named: "icShare")!
+    static let loction = UIImage(named: "icLocation")!
+    static let calendar = UIImage(named: "icDate")!
+    static let actor1 = UIImage(named: "Component 1")!
+    static let actor2 = UIImage(named: "Component 2")!
+    static let actor3 = UIImage(named: "Component 3")!
+    static let actor4 = UIImage(named: "Component 4")!
+    static let actor5 = UIImage(named: "Component 5")!
+    static let couponDetail = UIImage(named: "couponDetail")!
+    static let detailPoster = UIImage(named: "detailPoster")!
+    static let expadingButton = UIImage(named: "icBelow")!
     
     // Search
     
