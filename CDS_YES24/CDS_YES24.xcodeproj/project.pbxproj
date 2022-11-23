@@ -52,6 +52,7 @@
 		3BA7536C292C6F4400FEEBD8 /* ShowDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA7536B292C6F4400FEEBD8 /* ShowDetailTableViewCell.swift */; };
 		3BA75370292C6FD900FEEBD8 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA7536F292C6FD900FEEBD8 /* InfoTableViewCell.swift */; };
 		3BA75372292C6FF000FEEBD8 /* ShowInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA75371292C6FF000FEEBD8 /* ShowInfoTableViewCell.swift */; };
+		3BA98AAA292E0769000A61DC /* ReserveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA98AA9292E0769000A61DC /* ReserveButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +99,7 @@
 		3BA7536B292C6F4400FEEBD8 /* ShowDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetailTableViewCell.swift; sourceTree = "<group>"; };
 		3BA7536F292C6FD900FEEBD8 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
 		3BA75371292C6FF000FEEBD8 /* ShowInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowInfoTableViewCell.swift; sourceTree = "<group>"; };
+		3BA98AA9292E0769000A61DC /* ReserveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				3B3EE9F4292770D400BA4E79 /* NaviView.swift */,
+				3BA98AA9292E0769000A61DC /* ReserveButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -520,6 +523,7 @@
 				3B78BB502921FE57002438F2 /* SearchViewController.swift in Sources */,
 				3BA7536C292C6F4400FEEBD8 /* ShowDetailTableViewCell.swift in Sources */,
 				3B3EE9F5292770D400BA4E79 /* NaviView.swift in Sources */,
+				3BA98AAA292E0769000A61DC /* ReserveButton.swift in Sources */,
 				3B78BB062921D47C002438F2 /* HomeViewController.swift in Sources */,
 				3B53F9BB292200AC006E3156 /* UIFont+.swift in Sources */,
 				3BA75370292C6FD900FEEBD8 /* InfoTableViewCell.swift in Sources */,
@@ -677,6 +681,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 665TA4D5B9;
@@ -693,6 +698,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "sopt.org.CDS-YES24";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -704,6 +710,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 665TA4D5B9;
@@ -720,6 +727,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "sopt.org.CDS-YES24";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

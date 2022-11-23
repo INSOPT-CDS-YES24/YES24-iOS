@@ -111,7 +111,7 @@ extension ShowInfoTableViewCell {
         placeLabel.snp.makeConstraints {
             $0.centerY.equalTo(placeTitleLabel.snp.centerY)
             $0.leading.equalTo(placeTitleLabel.snp.trailing).offset(50)
-            $0.bottom.equalToSuperview().inset(142)
+            $0.bottom.equalToSuperview().inset(242)
         }
     }
 }

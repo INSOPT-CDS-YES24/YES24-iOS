@@ -15,6 +15,7 @@ final class DetailViewController: UIViewController {
     // MARK: - UI Components
     private let naviView = NaviView()
     private let tableView = UITableView(frame: .zero, style: .plain)
+    private let reserveButton = ReserveButton()
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
@@ -32,14 +33,13 @@ extension DetailViewController {
             $0.backgroundColor = .white
             $0.showsVerticalScrollIndicator = false
             $0.separatorStyle = .singleLine
+            $0.contentInsetAdjustmentBehavior = .never
         }
     }
     
     private func register() {
         tableView.delegate = self
         tableView.dataSource = self
-//        tableView.register(ExpandingTableViewHeaderFooterView.self,
-//                           forHeaderFooterViewReuseIdentifier: ExpandingTableViewHeaderFooterView.className)
         PosterTableViewCell.register(target: tableView)
         InfoTableViewCell.register(target: tableView)
         TicketTableViewCell.register(target: tableView)
@@ -51,7 +51,7 @@ extension DetailViewController {
     }
     
     private func setLayout() {
-        view.addSubViews(tableView, naviView)
+        view.addSubViews(tableView, naviView, reserveButton)
         
         tableView.snp.makeConstraints {
             $0.edges.equalToSuperview()
@@ -61,6 +61,12 @@ extension DetailViewController {
             $0.leading.trailing.equalToSuperview()
             $0.top.equalTo(view.safeAreaLayoutGuide)
             $0.height.equalTo(40)
+        }
+        
+        reserveButton.snp.makeConstraints {
+            $0.directionalHorizontalEdges.equalToSuperview().inset(20)
+            $0.height.equalTo(60)
+            $0.bottom.equalTo(view.safeAreaLayoutGuide).inset(24)
         }
     }
 }
@@ -115,17 +121,7 @@ extension DetailViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
-//    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-//        switch section {
-//        case 4, 5:
-//            guard let footer = tableView.dequeueReusableHeaderFooterView(withIdentifier: ExpandingTableViewHeaderFooterView.className) as? ExpandingTableViewHeaderFooterView else {return UITableViewHeaderFooterView()}
-//            return footer
-//        default:
-//            return UITableViewHeaderFooterView()
-//        }
-//    }
-//
-//    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-//        return section == 4 || section == 5 ? 60 : .leastNormalMagnitude
-//    }
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        scrollView.bounces = (scrollView.contentOffset.y > 150)
+    }
 }
