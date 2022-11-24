@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B3EE9F5292770D400BA4E79 /* NaviView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EE9F4292770D400BA4E79 /* NaviView.swift */; };
+		3B3EE9F8292775E400BA4E79 /* PosterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EE9F7292775E400BA4E79 /* PosterTableViewCell.swift */; };
+		3B3EE9FB292778D200BA4E79 /* UITableViewRegisterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EE9FA292778D200BA4E79 /* UITableViewRegisterable.swift */; };
+		3B3EE9FF2927859300BA4E79 /* separatorLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EE9FE2927859300BA4E79 /* separatorLineView.swift */; };
 		0333046D2927770C00CCF43A /* ShowGalleryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0333046C2927770C00CCF43A /* ShowGalleryTableViewCell.swift */; };
 		0333046F2927788F00CCF43A /* HomeButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0333046E2927788F00CCF43A /* HomeButtonTableViewCell.swift */; };
 		033304712927789F00CCF43A /* YesPickTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033304702927789F00CCF43A /* YesPickTableViewCell.swift */; };
@@ -23,6 +27,7 @@
 		3B53F9C02922082E006E3156 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B53F9BF2922082E006E3156 /* Const.swift */; };
 		3B53F9C2292224C6006E3156 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B53F9C1292224C6006E3156 /* TabBarItem.swift */; };
 		3B53F9C429222F94006E3156 /* UITabBar+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B53F9C329222F94006E3156 /* UITabBar+.swift */; };
+		3B76C4DE292C94050084D11F /* TicketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B76C4DD292C94050084D11F /* TicketTableViewCell.swift */; };
 		3B78BB022921D47C002438F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B78BB012921D47C002438F2 /* AppDelegate.swift */; };
 		3B78BB042921D47C002438F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B78BB032921D47C002438F2 /* SceneDelegate.swift */; };
 		3B78BB062921D47C002438F2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B78BB052921D47C002438F2 /* HomeViewController.swift */; };
@@ -47,9 +52,25 @@
 		3B78BB562921FEEF002438F2 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B78BB552921FEEF002438F2 /* TabBarController.swift */; };
 		3B78BB582921FFBB002438F2 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B78BB572921FFBB002438F2 /* UIView+.swift */; };
 		3B78BB5A2922006F002438F2 /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B78BB592922006F002438F2 /* UIStackView+.swift */; };
+		3B88941C292D3D800084FF95 /* ExpandingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B88941B292D3D800084FF95 /* ExpandingButton.swift */; };
+		3BA7534D292B09C200FEEBD8 /* ActorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA7534C292B09C200FEEBD8 /* ActorTableViewCell.swift */; };
+		3BA7535D292C5F2900FEEBD8 /* DetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA7535C292C5F2900FEEBD8 /* DetailModel.swift */; };
+		3BA7535F292C60D700FEEBD8 /* getClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA7535E292C60D700FEEBD8 /* getClassName.swift */; };
+		3BA75363292C66F100FEEBD8 /* ActorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA75362292C66F100FEEBD8 /* ActorCollectionViewCell.swift */; };
+		3BA75365292C693200FEEBD8 /* UICollectionViewRegisterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA75364292C693200FEEBD8 /* UICollectionViewRegisterable.swift */; };
+		3BA75368292C6CA600FEEBD8 /* AcotrModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA75367292C6CA600FEEBD8 /* AcotrModel.swift */; };
+		3BA7536A292C6E5B00FEEBD8 /* DiscountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA75369292C6E5B00FEEBD8 /* DiscountTableViewCell.swift */; };
+		3BA7536C292C6F4400FEEBD8 /* ShowDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA7536B292C6F4400FEEBD8 /* ShowDetailTableViewCell.swift */; };
+		3BA75370292C6FD900FEEBD8 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA7536F292C6FD900FEEBD8 /* InfoTableViewCell.swift */; };
+		3BA75372292C6FF000FEEBD8 /* ShowInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA75371292C6FF000FEEBD8 /* ShowInfoTableViewCell.swift */; };
+		3BA98AAA292E0769000A61DC /* ReserveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA98AA9292E0769000A61DC /* ReserveButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B3EE9F4292770D400BA4E79 /* NaviView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviView.swift; sourceTree = "<group>"; };
+		3B3EE9F7292775E400BA4E79 /* PosterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterTableViewCell.swift; sourceTree = "<group>"; };
+		3B3EE9FA292778D200BA4E79 /* UITableViewRegisterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewRegisterable.swift; sourceTree = "<group>"; };
+		3B3EE9FE2927859300BA4E79 /* separatorLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = separatorLineView.swift; sourceTree = "<group>"; };
 		0333046C2927770C00CCF43A /* ShowGalleryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowGalleryTableViewCell.swift; sourceTree = "<group>"; };
 		0333046E2927788F00CCF43A /* HomeButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButtonTableViewCell.swift; sourceTree = "<group>"; };
 		033304702927789F00CCF43A /* YesPickTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YesPickTableViewCell.swift; sourceTree = "<group>"; };
@@ -66,6 +87,7 @@
 		3B53F9BF2922082E006E3156 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		3B53F9C1292224C6006E3156 /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
 		3B53F9C329222F94006E3156 /* UITabBar+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBar+.swift"; sourceTree = "<group>"; };
+		3B76C4DD292C94050084D11F /* TicketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketTableViewCell.swift; sourceTree = "<group>"; };
 		3B78BAFE2921D47C002438F2 /* CDS_YES24.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDS_YES24.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B78BB012921D47C002438F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B78BB032921D47C002438F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +110,18 @@
 		3B78BB552921FEEF002438F2 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		3B78BB572921FFBB002438F2 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		3B78BB592922006F002438F2 /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
+		3B88941B292D3D800084FF95 /* ExpandingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandingButton.swift; sourceTree = "<group>"; };
+		3BA7534C292B09C200FEEBD8 /* ActorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorTableViewCell.swift; sourceTree = "<group>"; };
+		3BA7535C292C5F2900FEEBD8 /* DetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModel.swift; sourceTree = "<group>"; };
+		3BA7535E292C60D700FEEBD8 /* getClassName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getClassName.swift; sourceTree = "<group>"; };
+		3BA75362292C66F100FEEBD8 /* ActorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorCollectionViewCell.swift; sourceTree = "<group>"; };
+		3BA75364292C693200FEEBD8 /* UICollectionViewRegisterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewRegisterable.swift; sourceTree = "<group>"; };
+		3BA75367292C6CA600FEEBD8 /* AcotrModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcotrModel.swift; sourceTree = "<group>"; };
+		3BA75369292C6E5B00FEEBD8 /* DiscountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountTableViewCell.swift; sourceTree = "<group>"; };
+		3BA7536B292C6F4400FEEBD8 /* ShowDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetailTableViewCell.swift; sourceTree = "<group>"; };
+		3BA7536F292C6FD900FEEBD8 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
+		3BA75371292C6FF000FEEBD8 /* ShowInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowInfoTableViewCell.swift; sourceTree = "<group>"; };
+		3BA98AA9292E0769000A61DC /* ReserveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +139,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B3EE9F6292775A600BA4E79 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3BA75361292C66DE00FEEBD8 /* CollectionViewCell */,
+				3BA75360292C66D100FEEBD8 /* TableViewCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		3B3EE9F9292778BA00BA4E79 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				3B3EE9FA292778D200BA4E79 /* UITableViewRegisterable.swift */,
+				3BA75364292C693200FEEBD8 /* UICollectionViewRegisterable.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		3B6115242926976100AF62E6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3B3EE9F4292770D400BA4E79 /* NaviView.swift */,
+				3BA98AA9292E0769000A61DC /* ReserveButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		033304762927BE3100CCF43A /* Table */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,6 +274,7 @@
 		3B78BB182921D63A002438F2 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				3B3EE9FE2927859300BA4E79 /* separatorLineView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -230,6 +292,9 @@
 		3B78BB1A2921D666002438F2 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				3BA75366292C6C9E00FEEBD8 /* Models */,
+				3B3EE9F6292775A600BA4E79 /* Cells */,
+				3B6115242926976100AF62E6 /* Views */,
 				3B78BB4C2921FDE2002438F2 /* ViewConstrollers */,
 			);
 			path = Detail;
@@ -293,6 +358,7 @@
 		3B78BB232921D8B5002438F2 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				3BA7535B292C5F1900FEEBD8 /* Model */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -337,6 +403,7 @@
 		3B78BB382921DD6F002438F2 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				3B3EE9F9292778BA00BA4E79 /* Protocol */,
 				3B78BB3A2921DD82002438F2 /* Constant */,
 				3B78BB392921DD78002438F2 /* Extension */,
 			);
@@ -350,6 +417,7 @@
 				3B78BB592922006F002438F2 /* UIStackView+.swift */,
 				3B53F9BA292200AC006E3156 /* UIFont+.swift */,
 				3B53F9C329222F94006E3156 /* UITabBar+.swift */,
+				3BA7535E292C60D700FEEBD8 /* getClassName.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -387,6 +455,45 @@
 				3B78BB532921FEAD002438F2 /* MyTicketViewController.swift */,
 			);
 			path = ViewControlelrs;
+			sourceTree = "<group>";
+		};
+		3BA7535B292C5F1900FEEBD8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3BA7535C292C5F2900FEEBD8 /* DetailModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3BA75360292C66D100FEEBD8 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				3B3EE9F7292775E400BA4E79 /* PosterTableViewCell.swift */,
+				3BA7536F292C6FD900FEEBD8 /* InfoTableViewCell.swift */,
+				3B76C4DD292C94050084D11F /* TicketTableViewCell.swift */,
+				3BA7534C292B09C200FEEBD8 /* ActorTableViewCell.swift */,
+				3BA75369292C6E5B00FEEBD8 /* DiscountTableViewCell.swift */,
+				3BA7536B292C6F4400FEEBD8 /* ShowDetailTableViewCell.swift */,
+				3BA75371292C6FF000FEEBD8 /* ShowInfoTableViewCell.swift */,
+				3B88941B292D3D800084FF95 /* ExpandingButton.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		3BA75361292C66DE00FEEBD8 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				3BA75362292C66F100FEEBD8 /* ActorCollectionViewCell.swift */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		3BA75366292C6C9E00FEEBD8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3BA75367292C6CA600FEEBD8 /* AcotrModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -478,24 +585,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B3EE9F8292775E400BA4E79 /* PosterTableViewCell.swift in Sources */,
 				3B78BB542921FEAD002438F2 /* MyTicketViewController.swift in Sources */,
 				033304752927BDFB00CCF43A /* HomeButtonCollectionViewCell.swift in Sources */,
 				0399BC8E292C88BF004B1637 /* YesPickCollectionViewCell.swift in Sources */,
 				3B53F9BD2922013F006E3156 /* String.swift in Sources */,
+				3BA7535F292C60D700FEEBD8 /* getClassName.swift in Sources */,
+				3BA7535D292C5F2900FEEBD8 /* DetailModel.swift in Sources */,
+				3B76C4DE292C94050084D11F /* TicketTableViewCell.swift in Sources */,
+				3B3EE9FF2927859300BA4E79 /* separatorLineView.swift in Sources */,
 				3B78BB562921FEEF002438F2 /* TabBarController.swift in Sources */,
 				3B78BB502921FE57002438F2 /* SearchViewController.swift in Sources */,
+				3BA7536C292C6F4400FEEBD8 /* ShowDetailTableViewCell.swift in Sources */,
+				3B3EE9F5292770D400BA4E79 /* NaviView.swift in Sources */,
+				3BA98AAA292E0769000A61DC /* ReserveButton.swift in Sources */,
 				3B78BB062921D47C002438F2 /* HomeViewController.swift in Sources */,
 				3B53F9BB292200AC006E3156 /* UIFont+.swift in Sources */,
 				0399BC93292CB201004B1637 /* RecentSeeTableViewCell.swift in Sources */,
 				033304782927C35100CCF43A /* HomeButtonModel.swift in Sources */,
+				3BA75370292C6FD900FEEBD8 /* InfoTableViewCell.swift in Sources */,
+				3B3EE9FB292778D200BA4E79 /* UITableViewRegisterable.swift in Sources */,
 				3B78BB582921FFBB002438F2 /* UIView+.swift in Sources */,
 				3B78BB3C2921DDAA002438F2 /* Color.swift in Sources */,
+				3BA75365292C693200FEEBD8 /* UICollectionViewRegisterable.swift in Sources */,
+				3BA75368292C6CA600FEEBD8 /* AcotrModel.swift in Sources */,
 				0333046F2927788F00CCF43A /* HomeButtonTableViewCell.swift in Sources */,
 				0399BC86292BBC1E004B1637 /* ShowGalleryModel.swift in Sources */,
 				0399BC90292C8FBC004B1637 /* YesPickModel.swift in Sources */,
 				3B78BB022921D47C002438F2 /* AppDelegate.swift in Sources */,
 				0333046D2927770C00CCF43A /* ShowGalleryTableViewCell.swift in Sources */,
+				3BA75363292C66F100FEEBD8 /* ActorCollectionViewCell.swift in Sources */,
+				3BA75372292C6FF000FEEBD8 /* ShowInfoTableViewCell.swift in Sources */,
 				3B78BB042921D47C002438F2 /* SceneDelegate.swift in Sources */,
+				3B88941C292D3D800084FF95 /* ExpandingButton.swift in Sources */,
 				0399BC88292BC4C0004B1637 /* ShowGalleryCollectionViewCell.swift in Sources */,
 				3B78BB5A2922006F002438F2 /* UIStackView+.swift in Sources */,
 				3B78BB3E2921E26E002438F2 /* Images.swift in Sources */,
@@ -503,7 +625,9 @@
 				3B78BB522921FE7F002438F2 /* DetailViewController.swift in Sources */,
 				0399BC97292CB36F004B1637 /* RecentSeeModel.swift in Sources */,
 				033304712927789F00CCF43A /* YesPickTableViewCell.swift in Sources */,
+				3BA7534D292B09C200FEEBD8 /* ActorTableViewCell.swift in Sources */,
 				3B53F9C02922082E006E3156 /* Const.swift in Sources */,
+				3BA7536A292C6E5B00FEEBD8 /* DiscountTableViewCell.swift in Sources */,
 				3B53F9C429222F94006E3156 /* UITabBar+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -641,6 +765,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DGT9BQA4KH;
@@ -657,6 +782,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "sopt.org.CDS-YES24";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -668,6 +794,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DGT9BQA4KH;
@@ -684,6 +811,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "sopt.org.CDS-YES24";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
