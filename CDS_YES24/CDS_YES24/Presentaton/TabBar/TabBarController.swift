@@ -32,9 +32,9 @@ extension TabBarController {
     private func setTabBarItems() {
         tabs = [
             HomeViewController(),
-                DetailViewController(),
-                SearchViewController(),
-                MyTicketViewController()
+            DetailViewController(),
+            SearchViewController(),
+            MyTicketViewController()
         ]
         
         TabBarItemType.allCases.forEach {
