@@ -42,6 +42,7 @@
 		3B78BB582921FFBB002438F2 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B78BB572921FFBB002438F2 /* UIView+.swift */; };
 		3B78BB5A2922006F002438F2 /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B78BB592922006F002438F2 /* UIStackView+.swift */; };
 		3B88941C292D3D800084FF95 /* ExpandingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B88941B292D3D800084FF95 /* ExpandingButton.swift */; };
+		3B9E5CFD292F506800D8D9F7 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 3B9E5CFC292F506800D8D9F7 /* Moya */; };
 		3BA7534D292B09C200FEEBD8 /* ActorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA7534C292B09C200FEEBD8 /* ActorTableViewCell.swift */; };
 		3BA7535D292C5F2900FEEBD8 /* DetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA7535C292C5F2900FEEBD8 /* DetailModel.swift */; };
 		3BA7535F292C60D700FEEBD8 /* getClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA7535E292C60D700FEEBD8 /* getClassName.swift */; };
@@ -110,6 +111,7 @@
 				3B78BB4A2921E5C8002438F2 /* Kingfisher in Frameworks */,
 				3B78BB472921E587002438F2 /* SnapKit in Frameworks */,
 				3B78BB442921E569002438F2 /* SwiftyColor in Frameworks */,
+				3B9E5CFD292F506800D8D9F7 /* Moya in Frameworks */,
 				3B78BB412921E542002438F2 /* Then in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,6 +446,7 @@
 				3B78BB432921E569002438F2 /* SwiftyColor */,
 				3B78BB462921E587002438F2 /* SnapKit */,
 				3B78BB492921E5C8002438F2 /* Kingfisher */,
+				3B9E5CFC292F506800D8D9F7 /* Moya */,
 			);
 			productName = CDS_YES24;
 			productReference = 3B78BAFE2921D47C002438F2 /* CDS_YES24.app */;
@@ -478,6 +481,7 @@
 				3B78BB422921E569002438F2 /* XCRemoteSwiftPackageReference "SwiftyColor" */,
 				3B78BB452921E587002438F2 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				3B78BB482921E5C8002438F2 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				3B9E5CFB292F506800D8D9F7 /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = 3B78BAFF2921D47C002438F2 /* Products */;
 			projectDirPath = "";
@@ -791,6 +795,14 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+		3B9E5CFB292F506800D8D9F7 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -813,6 +825,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3B78BB482921E5C8002438F2 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		3B9E5CFC292F506800D8D9F7 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B9E5CFB292F506800D8D9F7 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
