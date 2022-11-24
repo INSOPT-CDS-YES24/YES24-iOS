@@ -9,7 +9,7 @@ import UIKit
 
 class MyConcertCollectionViewCell: UICollectionViewCell, UICollectionViewRegisterable {
 
-    static var isFromNib: Bool = true
+    static var isFromNib: Bool = false
     
     private let ticketImageView: UIImageView = UIImageView()
     private let genreButton: UIButton = UIButton()

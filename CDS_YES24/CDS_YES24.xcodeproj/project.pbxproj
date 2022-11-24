@@ -40,7 +40,18 @@
 		3B78BB562921FEEF002438F2 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B78BB552921FEEF002438F2 /* TabBarController.swift */; };
 		3B78BB582921FFBB002438F2 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B78BB572921FFBB002438F2 /* UIView+.swift */; };
 		3B78BB5A2922006F002438F2 /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B78BB592922006F002438F2 /* UIStackView+.swift */; };
-		5209DB182924DA760054F9FD /* CellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5209DB172924DA760054F9FD /* CellProtocol.swift */; };
+		3B88941C292D3D800084FF95 /* ExpandingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B88941B292D3D800084FF95 /* ExpandingButton.swift */; };
+		3BA7534D292B09C200FEEBD8 /* ActorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA7534C292B09C200FEEBD8 /* ActorTableViewCell.swift */; };
+		3BA7535D292C5F2900FEEBD8 /* DetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA7535C292C5F2900FEEBD8 /* DetailModel.swift */; };
+		3BA7535F292C60D700FEEBD8 /* getClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA7535E292C60D700FEEBD8 /* getClassName.swift */; };
+		3BA75363292C66F100FEEBD8 /* ActorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA75362292C66F100FEEBD8 /* ActorCollectionViewCell.swift */; };
+		3BA75365292C693200FEEBD8 /* UICollectionViewRegisterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA75364292C693200FEEBD8 /* UICollectionViewRegisterable.swift */; };
+		3BA75368292C6CA600FEEBD8 /* AcotrModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA75367292C6CA600FEEBD8 /* AcotrModel.swift */; };
+		3BA7536A292C6E5B00FEEBD8 /* DiscountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA75369292C6E5B00FEEBD8 /* DiscountTableViewCell.swift */; };
+		3BA7536C292C6F4400FEEBD8 /* ShowDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA7536B292C6F4400FEEBD8 /* ShowDetailTableViewCell.swift */; };
+		3BA75370292C6FD900FEEBD8 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA7536F292C6FD900FEEBD8 /* InfoTableViewCell.swift */; };
+		3BA75372292C6FF000FEEBD8 /* ShowInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA75371292C6FF000FEEBD8 /* ShowInfoTableViewCell.swift */; };
+		3BA98AAA292E0769000A61DC /* ReserveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA98AA9292E0769000A61DC /* ReserveButton.swift */; };
 		5209DB1A2924E4F20054F9FD /* MyTicketTabelViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5209DB192924E4F20054F9FD /* MyTicketTabelViewHeaderView.swift */; };
 		5209DB1C292509C40054F9FD /* ProfileMyTicketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5209DB1B292509C40054F9FD /* ProfileMyTicketTableViewCell.swift */; };
 		5209DB1E292509E50054F9FD /* RecentReserveMyTicketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5209DB1D292509E50054F9FD /* RecentReserveMyTicketTableViewCell.swift */; };
@@ -54,18 +65,6 @@
 		529FE3AB292763FD00A8D7AE /* TicketCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529FE3AA292763FD00A8D7AE /* TicketCollectionViewCell.swift */; };
 		52EA881E292B662B007F9B23 /* Int+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA881D292B662B007F9B23 /* Int+.swift */; };
 		52EA8820292B6EE3007F9B23 /* MyConcertCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA881F292B6EE3007F9B23 /* MyConcertCollectionViewCell.swift */; };
-		3B88941C292D3D800084FF95 /* ExpandingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B88941B292D3D800084FF95 /* ExpandingButton.swift */; };
-		3BA7534D292B09C200FEEBD8 /* ActorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA7534C292B09C200FEEBD8 /* ActorTableViewCell.swift */; };
-		3BA7535D292C5F2900FEEBD8 /* DetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA7535C292C5F2900FEEBD8 /* DetailModel.swift */; };
-		3BA7535F292C60D700FEEBD8 /* getClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA7535E292C60D700FEEBD8 /* getClassName.swift */; };
-		3BA75363292C66F100FEEBD8 /* ActorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA75362292C66F100FEEBD8 /* ActorCollectionViewCell.swift */; };
-		3BA75365292C693200FEEBD8 /* UICollectionViewRegisterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA75364292C693200FEEBD8 /* UICollectionViewRegisterable.swift */; };
-		3BA75368292C6CA600FEEBD8 /* AcotrModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA75367292C6CA600FEEBD8 /* AcotrModel.swift */; };
-		3BA7536A292C6E5B00FEEBD8 /* DiscountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA75369292C6E5B00FEEBD8 /* DiscountTableViewCell.swift */; };
-		3BA7536C292C6F4400FEEBD8 /* ShowDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA7536B292C6F4400FEEBD8 /* ShowDetailTableViewCell.swift */; };
-		3BA75370292C6FD900FEEBD8 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA7536F292C6FD900FEEBD8 /* InfoTableViewCell.swift */; };
-		3BA75372292C6FF000FEEBD8 /* ShowInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA75371292C6FF000FEEBD8 /* ShowInfoTableViewCell.swift */; };
-		3BA98AAA292E0769000A61DC /* ReserveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA98AA9292E0769000A61DC /* ReserveButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,7 +99,18 @@
 		3B78BB552921FEEF002438F2 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		3B78BB572921FFBB002438F2 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		3B78BB592922006F002438F2 /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
-		5209DB172924DA760054F9FD /* CellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellProtocol.swift; sourceTree = "<group>"; };
+		3B88941B292D3D800084FF95 /* ExpandingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandingButton.swift; sourceTree = "<group>"; };
+		3BA7534C292B09C200FEEBD8 /* ActorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorTableViewCell.swift; sourceTree = "<group>"; };
+		3BA7535C292C5F2900FEEBD8 /* DetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModel.swift; sourceTree = "<group>"; };
+		3BA7535E292C60D700FEEBD8 /* getClassName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getClassName.swift; sourceTree = "<group>"; };
+		3BA75362292C66F100FEEBD8 /* ActorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorCollectionViewCell.swift; sourceTree = "<group>"; };
+		3BA75364292C693200FEEBD8 /* UICollectionViewRegisterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewRegisterable.swift; sourceTree = "<group>"; };
+		3BA75367292C6CA600FEEBD8 /* AcotrModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcotrModel.swift; sourceTree = "<group>"; };
+		3BA75369292C6E5B00FEEBD8 /* DiscountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountTableViewCell.swift; sourceTree = "<group>"; };
+		3BA7536B292C6F4400FEEBD8 /* ShowDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetailTableViewCell.swift; sourceTree = "<group>"; };
+		3BA7536F292C6FD900FEEBD8 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
+		3BA75371292C6FF000FEEBD8 /* ShowInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowInfoTableViewCell.swift; sourceTree = "<group>"; };
+		3BA98AA9292E0769000A61DC /* ReserveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveButton.swift; sourceTree = "<group>"; };
 		5209DB192924E4F20054F9FD /* MyTicketTabelViewHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTicketTabelViewHeaderView.swift; sourceTree = "<group>"; };
 		5209DB1B292509C40054F9FD /* ProfileMyTicketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMyTicketTableViewCell.swift; sourceTree = "<group>"; };
 		5209DB1D292509E50054F9FD /* RecentReserveMyTicketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentReserveMyTicketTableViewCell.swift; sourceTree = "<group>"; };
@@ -114,18 +124,6 @@
 		529FE3AA292763FD00A8D7AE /* TicketCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketCollectionViewCell.swift; sourceTree = "<group>"; };
 		52EA881D292B662B007F9B23 /* Int+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+.swift"; sourceTree = "<group>"; };
 		52EA881F292B6EE3007F9B23 /* MyConcertCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyConcertCollectionViewCell.swift; sourceTree = "<group>"; };
-		3B88941B292D3D800084FF95 /* ExpandingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandingButton.swift; sourceTree = "<group>"; };
-		3BA7534C292B09C200FEEBD8 /* ActorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorTableViewCell.swift; sourceTree = "<group>"; };
-		3BA7535C292C5F2900FEEBD8 /* DetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModel.swift; sourceTree = "<group>"; };
-		3BA7535E292C60D700FEEBD8 /* getClassName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getClassName.swift; sourceTree = "<group>"; };
-		3BA75362292C66F100FEEBD8 /* ActorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorCollectionViewCell.swift; sourceTree = "<group>"; };
-		3BA75364292C693200FEEBD8 /* UICollectionViewRegisterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewRegisterable.swift; sourceTree = "<group>"; };
-		3BA75367292C6CA600FEEBD8 /* AcotrModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcotrModel.swift; sourceTree = "<group>"; };
-		3BA75369292C6E5B00FEEBD8 /* DiscountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountTableViewCell.swift; sourceTree = "<group>"; };
-		3BA7536B292C6F4400FEEBD8 /* ShowDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetailTableViewCell.swift; sourceTree = "<group>"; };
-		3BA7536F292C6FD900FEEBD8 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
-		3BA75371292C6FF000FEEBD8 /* ShowInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowInfoTableViewCell.swift; sourceTree = "<group>"; };
-		3BA98AA9292E0769000A61DC /* ReserveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -476,7 +474,6 @@
 		5209DB24292524E60054F9FD /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				5209DB172924DA760054F9FD /* CellProtocol.swift */,
 				5209DB1B292509C40054F9FD /* ProfileMyTicketTableViewCell.swift */,
 				5209DB1D292509E50054F9FD /* RecentReserveMyTicketTableViewCell.swift */,
 				529FE3AA292763FD00A8D7AE /* TicketCollectionViewCell.swift */,
@@ -584,7 +581,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B3EE9F8292775E400BA4E79 /* PosterTableViewCell.swift in Sources */,
-				3B78BB542921FEAD002438F2 /* MyTicketViewController.swift in Sources */,
 				5209DB1E292509E50054F9FD /* RecentReserveMyTicketTableViewCell.swift in Sources */,
 				529FE3AB292763FD00A8D7AE /* TicketCollectionViewCell.swift in Sources */,
 				3B53F9BD2922013F006E3156 /* String.swift in Sources */,
@@ -599,7 +595,6 @@
 				3B3EE9F5292770D400BA4E79 /* NaviView.swift in Sources */,
 				3BA98AAA292E0769000A61DC /* ReserveButton.swift in Sources */,
 				3B78BB062921D47C002438F2 /* HomeViewController.swift in Sources */,
-				5209DB182924DA760054F9FD /* CellProtocol.swift in Sources */,
 				5209DB1C292509C40054F9FD /* ProfileMyTicketTableViewCell.swift in Sources */,
 				525BB712292A8DB700B99358 /* CGFloat+.swift in Sources */,
 				3B53F9BB292200AC006E3156 /* UIFont+.swift in Sources */,
@@ -769,7 +764,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 665TA4D5B9;
+				DEVELOPMENT_TEAM = FQJCX687Q4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CDS_YES24/Resource/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -799,7 +794,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 665TA4D5B9;
+				DEVELOPMENT_TEAM = FQJCX687Q4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CDS_YES24/Resource/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

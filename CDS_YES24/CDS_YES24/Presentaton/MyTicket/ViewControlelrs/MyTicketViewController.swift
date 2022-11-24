@@ -83,14 +83,17 @@ extension MyTicketViewController: UITableViewDataSource{
         switch indexPath.section{
         case 0:
             guard let cell = myTicketTableView.dequeueReusableCell(withIdentifier: ProfileMyTicketTableViewCell.className, for: indexPath) as? ProfileMyTicketTableViewCell else {return ProfileMyTicketTableViewCell()}
+            cell.selectionStyle = .none
             cell.setDataBind(user: user)
             return cell
         case 1:
             guard let cell = myTicketTableView.dequeueReusableCell(withIdentifier: RecentReserveMyTicketTableViewCell.className, for: indexPath) as? RecentReserveMyTicketTableViewCell else {return RecentReserveMyTicketTableViewCell()}
+            cell.selectionStyle = .none
             return cell
 ////            cell.setDataBind(user: user)
         case 2:
             guard let cell = myTicketTableView.dequeueReusableCell(withIdentifier: ConcertMyTicketTableViewCell.className, for: indexPath) as? ConcertMyTicketTableViewCell else {return ConcertMyTicketTableViewCell()}
+            cell.selectionStyle = .none
             return cell
         default:
             return UITableViewCell()
