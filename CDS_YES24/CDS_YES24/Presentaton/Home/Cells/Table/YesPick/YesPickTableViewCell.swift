@@ -61,7 +61,7 @@ class YesPickTableViewCell: UITableViewCell {
     var yesPickModel: [YesPickModel] = [
         YesPickModel(yesPickImage: "maskGroup1", content: "뮤지컬", title: "2022 푸에르자부르타웨이라 인 서울 2022", period: "2022.09.29 - 2022.12.26"),
         YesPickModel(yesPickImage: "maskGroup2", content: "뮤지컬", title: "2022 권정의 험난한 합동세미나 과제", period: "2022.09.29 - 2022.12.26"),
-        YesPickModel(yesPickImage: "maskGroup3", content: "뮤지컬", title: "뮤지컬 <캣츠> 오리지널 내한-서울 (Musical)", period: "2022.09.29 - 2022.12.26")
+        YesPickModel(yesPickImage: "maskGroup3", content: "뮤지컬", title: "뮤지컬 <안가은> 오리지널 내한-파리바게트 (Musical)", period: "2022.11.24 - 2022.12.23")
     ]
 }
 
