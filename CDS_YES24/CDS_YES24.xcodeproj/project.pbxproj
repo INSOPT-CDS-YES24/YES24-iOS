@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0333046D2927770C00CCF43A /* ShowGalleryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0333046C2927770C00CCF43A /* ShowGalleryTableViewCell.swift */; };
+		0333046F2927788F00CCF43A /* HomeButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0333046E2927788F00CCF43A /* HomeButtonTableViewCell.swift */; };
+		033304712927789F00CCF43A /* YesPickTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033304702927789F00CCF43A /* YesPickTableViewCell.swift */; };
+		033304752927BDFB00CCF43A /* HomeButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033304742927BDFB00CCF43A /* HomeButtonCollectionViewCell.swift */; };
+		033304782927C35100CCF43A /* HomeButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033304772927C35100CCF43A /* HomeButtonModel.swift */; };
+		0399BC86292BBC1E004B1637 /* ShowGalleryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0399BC85292BBC1E004B1637 /* ShowGalleryModel.swift */; };
+		0399BC88292BC4C0004B1637 /* ShowGalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0399BC87292BC4C0004B1637 /* ShowGalleryCollectionViewCell.swift */; };
+		0399BC8E292C88BF004B1637 /* YesPickCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0399BC8D292C88BF004B1637 /* YesPickCollectionViewCell.swift */; };
+		0399BC90292C8FBC004B1637 /* YesPickModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0399BC8F292C8FBC004B1637 /* YesPickModel.swift */; };
+		0399BC93292CB201004B1637 /* RecentSeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0399BC92292CB201004B1637 /* RecentSeeTableViewCell.swift */; };
+		0399BC97292CB36F004B1637 /* RecentSeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0399BC96292CB36F004B1637 /* RecentSeeModel.swift */; };
 		3B3EE9F5292770D400BA4E79 /* NaviView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EE9F4292770D400BA4E79 /* NaviView.swift */; };
 		3B3EE9F8292775E400BA4E79 /* PosterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EE9F7292775E400BA4E79 /* PosterTableViewCell.swift */; };
 		3B3EE9FB292778D200BA4E79 /* UITableViewRegisterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EE9FA292778D200BA4E79 /* UITableViewRegisterable.swift */; };
@@ -68,6 +79,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0333046C2927770C00CCF43A /* ShowGalleryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowGalleryTableViewCell.swift; sourceTree = "<group>"; };
+		0333046E2927788F00CCF43A /* HomeButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButtonTableViewCell.swift; sourceTree = "<group>"; };
+		033304702927789F00CCF43A /* YesPickTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YesPickTableViewCell.swift; sourceTree = "<group>"; };
+		033304742927BDFB00CCF43A /* HomeButtonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButtonCollectionViewCell.swift; sourceTree = "<group>"; };
+		033304772927C35100CCF43A /* HomeButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButtonModel.swift; sourceTree = "<group>"; };
+		0399BC85292BBC1E004B1637 /* ShowGalleryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowGalleryModel.swift; sourceTree = "<group>"; };
+		0399BC87292BC4C0004B1637 /* ShowGalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowGalleryCollectionViewCell.swift; sourceTree = "<group>"; };
+		0399BC8D292C88BF004B1637 /* YesPickCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YesPickCollectionViewCell.swift; sourceTree = "<group>"; };
+		0399BC8F292C8FBC004B1637 /* YesPickModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YesPickModel.swift; sourceTree = "<group>"; };
+		0399BC92292CB201004B1637 /* RecentSeeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSeeTableViewCell.swift; sourceTree = "<group>"; };
+		0399BC96292CB36F004B1637 /* RecentSeeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSeeModel.swift; sourceTree = "<group>"; };
 		3B3EE9F4292770D400BA4E79 /* NaviView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviView.swift; sourceTree = "<group>"; };
 		3B3EE9F7292775E400BA4E79 /* PosterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterTableViewCell.swift; sourceTree = "<group>"; };
 		3B3EE9FA292778D200BA4E79 /* UITableViewRegisterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewRegisterable.swift; sourceTree = "<group>"; };
@@ -141,6 +163,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		033304762927BE3100CCF43A /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				0333046C2927770C00CCF43A /* ShowGalleryTableViewCell.swift */,
+				0333046E2927788F00CCF43A /* HomeButtonTableViewCell.swift */,
+				033304702927789F00CCF43A /* YesPickTableViewCell.swift */,
+				0399BC92292CB201004B1637 /* RecentSeeTableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		036EC06B29307FCE000C915A /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				0399BC87292BC4C0004B1637 /* ShowGalleryCollectionViewCell.swift */,
+				033304742927BDFB00CCF43A /* HomeButtonCollectionViewCell.swift */,
+				0399BC8D292C88BF004B1637 /* YesPickCollectionViewCell.swift */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
 		3B3EE9F6292775A600BA4E79 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,6 +328,8 @@
 		3B78BB1E2921D6A3002438F2 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				036EC06B29307FCE000C915A /* CollectionViewCell */,
+				033304762927BE3100CCF43A /* TableViewCell */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -292,6 +337,10 @@
 		3B78BB202921D6B1002438F2 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				033304772927C35100CCF43A /* HomeButtonModel.swift */,
+				0399BC85292BBC1E004B1637 /* ShowGalleryModel.swift */,
+				0399BC8F292C8FBC004B1637 /* YesPickModel.swift */,
+				0399BC96292CB36F004B1637 /* RecentSeeModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -583,6 +632,9 @@
 				3B3EE9F8292775E400BA4E79 /* PosterTableViewCell.swift in Sources */,
 				5209DB1E292509E50054F9FD /* RecentReserveMyTicketTableViewCell.swift in Sources */,
 				529FE3AB292763FD00A8D7AE /* TicketCollectionViewCell.swift in Sources */,
+				3B78BB542921FEAD002438F2 /* MyTicketViewController.swift in Sources */,
+				033304752927BDFB00CCF43A /* HomeButtonCollectionViewCell.swift in Sources */,
+				0399BC8E292C88BF004B1637 /* YesPickCollectionViewCell.swift in Sources */,
 				3B53F9BD2922013F006E3156 /* String.swift in Sources */,
 				3BA7535F292C60D700FEEBD8 /* getClassName.swift in Sources */,
 				3BA7535D292C5F2900FEEBD8 /* DetailModel.swift in Sources */,
@@ -598,6 +650,8 @@
 				5209DB1C292509C40054F9FD /* ProfileMyTicketTableViewCell.swift in Sources */,
 				525BB712292A8DB700B99358 /* CGFloat+.swift in Sources */,
 				3B53F9BB292200AC006E3156 /* UIFont+.swift in Sources */,
+				0399BC93292CB201004B1637 /* RecentSeeTableViewCell.swift in Sources */,
+				033304782927C35100CCF43A /* HomeButtonModel.swift in Sources */,
 				3BA75370292C6FD900FEEBD8 /* InfoTableViewCell.swift in Sources */,
 				3B3EE9FB292778D200BA4E79 /* UITableViewRegisterable.swift in Sources */,
 				3B78BB582921FFBB002438F2 /* UIView+.swift in Sources */,
@@ -605,13 +659,18 @@
 				3B78BB3C2921DDAA002438F2 /* Color.swift in Sources */,
 				3BA75365292C693200FEEBD8 /* UICollectionViewRegisterable.swift in Sources */,
 				3BA75368292C6CA600FEEBD8 /* AcotrModel.swift in Sources */,
+				0333046F2927788F00CCF43A /* HomeButtonTableViewCell.swift in Sources */,
+				0399BC86292BBC1E004B1637 /* ShowGalleryModel.swift in Sources */,
+				0399BC90292C8FBC004B1637 /* YesPickModel.swift in Sources */,
 				3B78BB022921D47C002438F2 /* AppDelegate.swift in Sources */,
+				0333046D2927770C00CCF43A /* ShowGalleryTableViewCell.swift in Sources */,
 				3BA75363292C66F100FEEBD8 /* ActorCollectionViewCell.swift in Sources */,
 				3BA75372292C6FF000FEEBD8 /* ShowInfoTableViewCell.swift in Sources */,
 				3B78BB042921D47C002438F2 /* SceneDelegate.swift in Sources */,
 				3B88941C292D3D800084FF95 /* ExpandingButton.swift in Sources */,
 				5209DB2029250A110054F9FD /* ConcertMyTicketTableViewCell.swift in Sources */,
 				525BB714292A8DCD00B99358 /* UILabel+.swift in Sources */,
+				0399BC88292BC4C0004B1637 /* ShowGalleryCollectionViewCell.swift in Sources */,
 				3B78BB5A2922006F002438F2 /* UIStackView+.swift in Sources */,
 				525BB719292A91D100B99358 /* TicketInfoView.swift in Sources */,
 				52EA881E292B662B007F9B23 /* Int+.swift in Sources */,
@@ -619,6 +678,8 @@
 				3B53F9C2292224C6006E3156 /* TabBarItem.swift in Sources */,
 				5209DB23292524C20054F9FD /* UserProfileButtonView.swift in Sources */,
 				3B78BB522921FE7F002438F2 /* DetailViewController.swift in Sources */,
+				0399BC97292CB36F004B1637 /* RecentSeeModel.swift in Sources */,
+				033304712927789F00CCF43A /* YesPickTableViewCell.swift in Sources */,
 				525BB710292A8D9600B99358 /* User.swift in Sources */,
 				3BA7534D292B09C200FEEBD8 /* ActorTableViewCell.swift in Sources */,
 				3B53F9C02922082E006E3156 /* Const.swift in Sources */,
