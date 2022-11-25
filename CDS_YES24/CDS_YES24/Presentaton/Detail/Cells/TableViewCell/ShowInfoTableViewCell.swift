@@ -35,6 +35,13 @@ class ShowInfoTableViewCell: UITableViewCell, UITableViewRegisterable {
 }
 
 extension ShowInfoTableViewCell {
+    func configure(_ model: DetailResponseDTO) {
+        hostLabel.text = model.host
+        callCenterLabel.text = model.callCenter
+        ageLimitLabel.text = model.ageLimit
+        placeLabel.text = model.location
+    }
+    
     private func setUI() {
         titleLabel.do {
             $0.font = .pretendard(.bold, size: 14)
@@ -50,6 +57,7 @@ extension ShowInfoTableViewCell {
         [hostLabel, callCenterLabel, ageLimitLabel, placeLabel].forEach {
             $0.textColor = UIColor(red: 145/255, green: 145/255, blue: 145/255, alpha: 1)
             $0.font = .pretendard(.bold, size: 14)
+            $0.numberOfLines = 0
         }
         
         hostTitleLabel.text = "주최/기획"
@@ -99,8 +107,9 @@ extension ShowInfoTableViewCell {
         }
         
         callCenterLabel.snp.makeConstraints {
-            $0.centerY.equalTo(callCenterTitleLabel.snp.centerY)
+            $0.top.equalTo(callCenterTitleLabel.snp.top)
             $0.leading.equalTo(placeLabel.snp.leading)
+            $0.trailing.equalToSuperview().inset(42)
         }
         
         ageLimitLabel.snp.makeConstraints {

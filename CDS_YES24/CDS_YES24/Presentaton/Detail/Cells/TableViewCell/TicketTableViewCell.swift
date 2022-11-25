@@ -49,6 +49,13 @@ class TicketTableViewCell: UITableViewCell, UITableViewRegisterable {
 }
 
 extension TicketTableViewCell {
+    func configure(_ model: DetailResponseDTO) {
+        vipPriceLabel.text = "\(model.vipSeat)원"
+        rPriceLabel.text = "\(model.rSeat)원"
+        sPriceLabel.text = "\(model.sSeat)원"
+        aPriceLabel.text = "\(model.aSeat)원"
+    }
+    
     private func setUI() {
         titleStackView.do {
             $0.axis = .horizontal
@@ -107,10 +114,10 @@ extension TicketTableViewCell {
         sLabel.text = "S석"
         aLabel.text = "A석"
         
-        vipPriceLabel.text = "150,000원"
-        rPriceLabel.text = "120,000원"
-        sPriceLabel.text = "90,000원"
-        aPriceLabel.text = "70,000원"
+        vipPriceLabel.text = "0원"
+        rPriceLabel.text = "0원"
+        sPriceLabel.text = "0원"
+        aPriceLabel.text = "0원"
         
     }
     
