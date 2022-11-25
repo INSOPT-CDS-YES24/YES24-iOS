@@ -75,6 +75,7 @@
 		3BA75372292C6FF000FEEBD8 /* ShowInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA75371292C6FF000FEEBD8 /* ShowInfoTableViewCell.swift */; };
 		3BA98AAA292E0769000A61DC /* ReserveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA98AA9292E0769000A61DC /* ReserveButton.swift */; };
 		3BE106E22930EBEC00942268 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE106E12930EBEB00942268 /* UILabel+.swift */; };
+		5204F29C293103F1002051F2 /* SearchTableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5204F29B293103F1002051F2 /* SearchTableViewHeaderView.swift */; };
 		5209DB1A2924E4F20054F9FD /* MyTicketTabelViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5209DB192924E4F20054F9FD /* MyTicketTabelViewHeaderView.swift */; };
 		5209DB1C292509C40054F9FD /* ProfileMyTicketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5209DB1B292509C40054F9FD /* ProfileMyTicketTableViewCell.swift */; };
 		5209DB1E292509E50054F9FD /* RecentReserveMyTicketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5209DB1D292509E50054F9FD /* RecentReserveMyTicketTableViewCell.swift */; };
@@ -155,6 +156,7 @@
 		3BA75371292C6FF000FEEBD8 /* ShowInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowInfoTableViewCell.swift; sourceTree = "<group>"; };
 		3BA98AA9292E0769000A61DC /* ReserveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveButton.swift; sourceTree = "<group>"; };
 		3BE106E12930EBEB00942268 /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
+		5204F29B293103F1002051F2 /* SearchTableViewHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewHeaderView.swift; sourceTree = "<group>"; };
 		5209DB192924E4F20054F9FD /* MyTicketTabelViewHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTicketTabelViewHeaderView.swift; sourceTree = "<group>"; };
 		5209DB1B292509C40054F9FD /* ProfileMyTicketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMyTicketTableViewCell.swift; sourceTree = "<group>"; };
 		5209DB1D292509E50054F9FD /* RecentReserveMyTicketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentReserveMyTicketTableViewCell.swift; sourceTree = "<group>"; };
@@ -324,6 +326,7 @@
 		3B78BB1B2921D66E002438F2 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				5204F299293103DF002051F2 /* View */,
 				3B78BB4D2921FDED002438F2 /* ViewControllers */,
 			);
 			path = Search;
@@ -557,6 +560,22 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		5204F299293103DF002051F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5204F29A293103E4002051F2 /* ReusableView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5204F29A293103E4002051F2 /* ReusableView */ = {
+			isa = PBXGroup;
+			children = (
+				5204F29B293103F1002051F2 /* SearchTableViewHeaderView.swift */,
+			);
+			path = ReusableView;
+			sourceTree = "<group>";
+		};
 		5209DB162924DA370054F9FD /* ReusableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -709,6 +728,7 @@
 				3BA98AAA292E0769000A61DC /* ReserveButton.swift in Sources */,
 				3B78BB062921D47C002438F2 /* HomeViewController.swift in Sources */,
 				3B9E5D0F2930AF5000D8D9F7 /* ShowService.swift in Sources */,
+				5204F29C293103F1002051F2 /* SearchTableViewHeaderView.swift in Sources */,
 				5209DB1C292509C40054F9FD /* ProfileMyTicketTableViewCell.swift in Sources */,
 				525BB712292A8DB700B99358 /* CGFloat+.swift in Sources */,
 				3B53F9BB292200AC006E3156 /* UIFont+.swift in Sources */,
