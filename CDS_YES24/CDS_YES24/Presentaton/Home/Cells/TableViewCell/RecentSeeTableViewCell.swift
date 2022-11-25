@@ -19,6 +19,7 @@ class RecentSeeTableViewCell: UITableViewCell {
         $0.font = UIFont.pretendard(.bold, size: 18)
         $0.textColor = Color.yesBrownishGrey
         $0.numberOfLines = 0
+        $0.partColorChange(targetString: "<에곤실레>", textColor: UIColor(red: 83/255, green: 141/255, blue: 255/255, alpha: 1))
     }
     
     private let moreLabel = UIImageView().then {
