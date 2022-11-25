@@ -19,7 +19,7 @@ final class MyTicketViewController: UIViewController {
     // MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUI() 
+        setUI()
         setLayout()
         setTableView()
     }

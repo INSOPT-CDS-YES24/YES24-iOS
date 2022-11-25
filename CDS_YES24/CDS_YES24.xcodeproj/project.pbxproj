@@ -76,6 +76,7 @@
 		529FE3AB292763FD00A8D7AE /* TicketCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529FE3AA292763FD00A8D7AE /* TicketCollectionViewCell.swift */; };
 		52EA881E292B662B007F9B23 /* Int+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA881D292B662B007F9B23 /* Int+.swift */; };
 		52EA8820292B6EE3007F9B23 /* MyConcertCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA881F292B6EE3007F9B23 /* MyConcertCollectionViewCell.swift */; };
+		52EA8824292E823D007F9B23 /* SearchTableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA8823292E823D007F9B23 /* SearchTableViewHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -146,6 +147,7 @@
 		529FE3AA292763FD00A8D7AE /* TicketCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketCollectionViewCell.swift; sourceTree = "<group>"; };
 		52EA881D292B662B007F9B23 /* Int+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+.swift"; sourceTree = "<group>"; };
 		52EA881F292B6EE3007F9B23 /* MyConcertCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyConcertCollectionViewCell.swift; sourceTree = "<group>"; };
+		52EA8823292E823D007F9B23 /* SearchTableViewHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -302,6 +304,7 @@
 		3B78BB1B2921D66E002438F2 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				52EA8821292E820A007F9B23 /* View */,
 				3B78BB4D2921FDED002438F2 /* ViewControllers */,
 			);
 			path = Search;
@@ -540,6 +543,22 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		52EA8821292E820A007F9B23 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52EA8822292E8210007F9B23 /* ReusableView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52EA8822292E8210007F9B23 /* ReusableView */ = {
+			isa = PBXGroup;
+			children = (
+				52EA8823292E823D007F9B23 /* SearchTableViewHeaderView.swift */,
+			);
+			path = ReusableView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -674,6 +693,7 @@
 				3B78BB5A2922006F002438F2 /* UIStackView+.swift in Sources */,
 				525BB719292A91D100B99358 /* TicketInfoView.swift in Sources */,
 				52EA881E292B662B007F9B23 /* Int+.swift in Sources */,
+				52EA8824292E823D007F9B23 /* SearchTableViewHeaderView.swift in Sources */,
 				3B78BB3E2921E26E002438F2 /* Images.swift in Sources */,
 				3B53F9C2292224C6006E3156 /* TabBarItem.swift in Sources */,
 				5209DB23292524C20054F9FD /* UserProfileButtonView.swift in Sources */,
