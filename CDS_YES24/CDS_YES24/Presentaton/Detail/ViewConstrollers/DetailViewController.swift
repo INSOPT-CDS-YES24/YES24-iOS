@@ -11,10 +11,11 @@ import SnapKit
 import Then
 
 final class DetailViewController: UIViewController {
-//    func heartButtonDidTap(isSeleted: Bool) {
-//        <#code#>
-//    }
-//
+    var data = DetailResponseDTO(id: 0, title: "", genre: "", dueDate: "", location: "", actor: [""], coupon: 0, vipSeat: 0, rSeat: 0, sSeat: 0, aSeat: 0, host: "", callCenter: "", ageLimit: "") {
+        didSet {
+            tableView.reloadData()
+        }
+    }
     
     // MARK: - UI Components
     private let naviView = NaviView()
@@ -28,9 +29,25 @@ final class DetailViewController: UIViewController {
         setLayout()
         setUI()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        requestDetail()
+    }
 }
 
 extension DetailViewController {
+    func requestDetail() {
+        DetailAPI.shared.detail { Response, err in
+            print("11111111", Response)
+            
+            if let data = Response {
+                self.data = data
+            }
+            
+        }
+    }
+    
     private func setUI() {
         tableView.do {
             $0.rowHeight = UITableView.automaticDimension
@@ -95,11 +112,13 @@ extension DetailViewController: UITableViewDelegate, UITableViewDataSource {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: InfoTableViewCell.className, for: indexPath) as? InfoTableViewCell else {return UITableViewCell()}
             cell.selectionStyle = .none
             cell.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: CGRectGetWidth(tableView.bounds))
+            cell.configure(data)
             return cell
         case 2:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: TicketTableViewCell.className, for: indexPath) as? TicketTableViewCell else {return UITableViewCell()}
             cell.selectionStyle = .none
             cell.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+            cell.configure(data)
             return cell
         case 3:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: ActorTableViewCell.className, for: indexPath) as? ActorTableViewCell else {return UITableViewCell()}
@@ -110,6 +129,7 @@ extension DetailViewController: UITableViewDelegate, UITableViewDataSource {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: DiscountTableViewCell.className, for: indexPath) as? DiscountTableViewCell else {return UITableViewCell()}
             cell.selectionStyle = .none
             cell.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+            cell.configure(data)
             return cell
         case 5:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: ShowDetailTableViewCell.className, for: indexPath) as? ShowDetailTableViewCell else {return UITableViewCell()}
@@ -119,6 +139,7 @@ extension DetailViewController: UITableViewDelegate, UITableViewDataSource {
         case 6:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: ShowInfoTableViewCell.className, for: indexPath) as? ShowInfoTableViewCell else {return UITableViewCell()}
             cell.selectionStyle = .none
+            cell.configure(data)
             return cell
         default:
             return UITableViewCell()

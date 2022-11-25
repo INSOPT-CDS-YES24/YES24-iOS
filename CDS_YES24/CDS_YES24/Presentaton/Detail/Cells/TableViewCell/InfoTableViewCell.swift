@@ -33,11 +33,17 @@ class InfoTableViewCell: UITableViewCell, UITableViewRegisterable {
 }
 
 extension InfoTableViewCell {
+    func configure(_ model: DetailResponseDTO) {
+        titleLabel.text = model.title
+        dateLabel.text = model.dueDate
+        placeLabel.text = model.location
+    }
+    
     private func setUI() {
         titleLabel.do {
             $0.textColor = Color.yesGrey
             $0.font = .pretendard(.bold, size: 20)
-            $0.text = "뮤지컬[삼총사]"
+            $0.text = "공연이름"
         }
         
         heartButton.do {
@@ -54,8 +60,8 @@ extension InfoTableViewCell {
             $0.textColor = Color.yesGrey
         }
         
-        dateLabel.text = "2022.11.22 - 2022.12.23"
-        placeLabel.text = "유니버설아트센터 대극장"
+        dateLabel.text = "기간"
+        placeLabel.text = "장소"
     }
     
     private func setLayout() {

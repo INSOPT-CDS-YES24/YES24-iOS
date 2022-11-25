@@ -22,7 +22,7 @@ class DiscountTableViewCell: UITableViewCell, UITableViewRegisterable {
     private let stackView = UIStackView()
     
     var isFold: Bool = false
-    var clickedEvent: ((Bool) -> Void)?
+    var infoCount = 0
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -36,6 +36,11 @@ class DiscountTableViewCell: UITableViewCell, UITableViewRegisterable {
 }
 
 extension DiscountTableViewCell {
+    func configure(_ model: DetailResponseDTO) {
+        infoCount = model.coupon
+        usableCouponLabel.text = "사용가능한 할인 정보 \(infoCount)개"
+    }
+    
     private func setUI() {
         titleLabel.do {
             $0.font = .pretendard(.bold, size: 14)
@@ -51,7 +56,7 @@ extension DiscountTableViewCell {
         usableCouponLabel.do {
             $0.font = .pretendard(.semiBold, size: 16)
             $0.textColor = Color.yesBrownishGrey
-            $0.text = "사용가능한 할인 정보 2개"
+            $0.text = "사용가능한 할인 정보 \(infoCount)개"
         }
         
         detailButton.do {
