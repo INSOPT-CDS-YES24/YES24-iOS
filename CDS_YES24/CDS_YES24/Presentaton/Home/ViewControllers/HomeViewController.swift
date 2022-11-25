@@ -36,10 +36,17 @@ extension HomeViewController {
         view.addSubview(ticketHomeTableView)
         
         ticketHomeTableView.snp.makeConstraints { make in
-            //make.edges.equalToSuperview()
-            make.top.equalToSuperview()
-            make.leading.trailing.equalToSuperview()
-            make.bottom.equalToSuperview()
+            make.edges.equalToSuperview()
+//            make.top.equalToSuperview()
+//            make.leading.trailing.equalToSuperview()
+            make.bottom.equalToSuperview().inset(50)
+        }
+        
+        ticketHomeTableView.do {
+            $0.rowHeight = UITableView.automaticDimension
+            $0.showsVerticalScrollIndicator = false
+            $0.bounces = false
+            $0.contentInsetAdjustmentBehavior = .never
         }
     }
     
@@ -65,16 +72,16 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if (indexPath.section == 0){
-            return 484.0
+            return 515
         }
         else if (indexPath.section == 1){
-            return 245.0
+            return 245
         }
         else if (indexPath.section == 2){
             return 400
         }
         else if (indexPath.section == 3){
-            return 400
+            return 470
         }
         else {
             return 0
@@ -86,22 +93,29 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
         if (indexPath.section == 0){ // ShowGallery 테이블 뷰 셀 반환
             guard let cell = ticketHomeTableView.dequeueReusableCell(withIdentifier: ShowGalleryTableViewCell.identifier, for: indexPath) as? ShowGalleryTableViewCell else { return ShowGalleryTableViewCell()
             }
+            cell.selectionStyle = .none
             return cell
         }
         else if (indexPath.section == 1){ // HomeButton 테이블 뷰 셀 반환
             guard let cell = ticketHomeTableView.dequeueReusableCell(withIdentifier: HomeButtonTableViewCell.identifier, for: indexPath) as? HomeButtonTableViewCell else { return HomeButtonTableViewCell()
             }
+            cell.selectionStyle = .none
+            cell.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: CGRectGetWidth(tableView.bounds))
             return cell
         }
-        else if (indexPath.section == 2){ // YePick 테이블 뷰 셀 반환
+        else if (indexPath.section == 2){ // YesPick 테이블 뷰 셀 반환
             guard let cell = ticketHomeTableView.dequeueReusableCell(withIdentifier: YesPickTableViewCell.identifier, for: indexPath) as? YesPickTableViewCell else { return YesPickTableViewCell()
             }
+            cell.selectionStyle = .none
+            cell.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: CGRectGetWidth(tableView.bounds))
             return cell
         }
         else if (indexPath.section == 3){
             guard let cell = ticketHomeTableView.dequeueReusableCell(withIdentifier: RecentSeeTableViewCell.identifier, for: indexPath) as?
                     RecentSeeTableViewCell else { return RecentSeeTableViewCell()
             }
+            cell.selectionStyle = .none
+            cell.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: CGRectGetWidth(tableView.bounds))
             return cell
         }
         else {

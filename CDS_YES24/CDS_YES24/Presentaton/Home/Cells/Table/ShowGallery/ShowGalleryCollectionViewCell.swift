@@ -54,7 +54,7 @@ extension ShowGalleryCollectionViewCell {
         }
         
         galleryImage.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(150)
+            make.top.equalToSuperview().offset(180)
             make.centerX.equalToSuperview()
             make.width.height.equalTo(204)
         }

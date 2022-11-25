@@ -70,10 +70,9 @@ extension YesPickTableViewCell {
         backgroundColor = .clear
         contentView.backgroundColor = .clear
         
-        [yesPickLogo, favoriteLabel, moreLabel].forEach {
+        [yesPickLogo, favoriteLabel, moreLabel, yesPickCollectionView].forEach {
             contentView.addSubview($0)
         }
-        contentView.addSubview(yesPickCollectionView)
         
         yesPickLogo.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(29)
@@ -86,15 +85,14 @@ extension YesPickTableViewCell {
         }
         
         moreLabel.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(70)
+            make.top.equalToSuperview().offset(65)
             make.trailing.equalToSuperview().inset(7)
         }
         
         yesPickCollectionView.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(80)
+            make.top.equalTo(yesPickLogo.snp.bottom).offset(40) // 뭔가 이상
             make.leading.trailing.equalToSuperview()
-            make.height.equalTo(280)
-            make.bottom.equalToSuperview()
+            make.bottom.equalToSuperview().inset(20)
         }
     }
     
@@ -108,7 +106,7 @@ extension YesPickTableViewCell {
 
 extension YesPickTableViewCell: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 126, height: 232)
+        return CGSize(width: 126, height: 230)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {

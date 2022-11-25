@@ -62,26 +62,25 @@ extension RecentSeeTableViewCell {
         backgroundColor = .clear
         contentView.backgroundColor = .clear
         
-        [favoriteLabel, moreLabel].forEach {
+        [favoriteLabel, moreLabel, recentSeeCollectionView].forEach {
             contentView.addSubview($0)
         }
-        contentView.addSubview(recentSeeCollectionView)
         
+        // 레이아웃 이상함..
         favoriteLabel.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(62)
+            make.top.equalToSuperview().offset(42)
             make.leading.equalToSuperview().offset(20)
         }
         
         moreLabel.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(70)
+            make.top.equalToSuperview().offset(45)
             make.trailing.equalToSuperview().inset(7)
         }
         
         recentSeeCollectionView.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(80)
+            make.top.equalToSuperview().offset(1)
             make.leading.trailing.equalToSuperview()
-            make.height.equalTo(280)
-            make.bottom.equalToSuperview()
+            make.bottom.equalToSuperview().inset(20)
         }
     }
     
@@ -95,7 +94,7 @@ extension RecentSeeTableViewCell {
 
 extension RecentSeeTableViewCell: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 126, height: 232)
+        return CGSize(width: 126, height: 230)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {

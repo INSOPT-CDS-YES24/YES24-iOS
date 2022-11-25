@@ -84,19 +84,16 @@ class ShowGalleryTableViewCell: UITableViewCell {
 extension ShowGalleryTableViewCell {
     private func layout() {
         backgroundColor = .clear
-        contentView.backgroundColor = .clear
         contentView.addSubview(homeBackImage)
         contentView.addSubview(showGalleryCollectionView)
         
         showGalleryCollectionView.snp.makeConstraints { make in
-            make.top.equalToSuperview()
-            make.leading.trailing.bottom.equalToSuperview()
+            make.edges.equalToSuperview()
         }
         
         // 나중에 이미지 사이즈 고치기
         homeBackImage.snp.makeConstraints { make in
-            make.top.equalToSuperview()
-            make.leading.trailing.bottom.equalToSuperview()
+            make.edges.equalToSuperview()
         }
         
         [homeLogo24Ticket, userName, recommendLabel,
@@ -105,7 +102,7 @@ extension ShowGalleryTableViewCell {
         }
         
         homeLogo24Ticket.snp.makeConstraints { make in
-            make.top.equalToSuperview()
+            make.top.equalToSuperview().offset(46)
             make.leading.equalToSuperview().offset(18)
             make.width.equalTo(124)
         }
@@ -121,12 +118,12 @@ extension ShowGalleryTableViewCell {
         }
         
         rightButton.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(220)
+            make.top.equalTo(homeLogo24Ticket.snp.bottom).offset(180)
             make.leading.equalToSuperview().offset(320) // 왜 굳이 이렇게 해야하는 거지?
         }
         
         leftButton.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(220)
+            make.top.equalTo(homeLogo24Ticket.snp.bottom).offset(180)
             make.leading.equalToSuperview().offset(30)
         }
     }

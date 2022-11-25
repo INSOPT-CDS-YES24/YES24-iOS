@@ -75,7 +75,7 @@ extension YesPickCollectionViewCell {
         }
         
         yesPickPeriod.snp.makeConstraints { make in
-            make.top.equalTo(yesPickTitle.snp.bottom).offset(5)
+            make.top.equalTo(yesPickTitle.snp.bottom)
             make.centerX.equalToSuperview()
             make.width.equalTo(126)
             make.height.equalTo(12)
