@@ -9,15 +9,14 @@ import UIKit
 import Then
 
 class ProfileMyTicketTableViewCell: UITableViewCell, UITableViewRegisterable {
+    
     private var user: User
     static var isFromNib = false
     
-    private var yesPointView: UserProfileButtonView = UserProfileButtonView(userProfileInfoType: .yesPoint,
-                                                                            info: 0)
-    private var saleCouponView: UserProfileButtonView = UserProfileButtonView(userProfileInfoType: .saleCoupon,
-                                                                              info: 0)
-    private var advanceTicketView: UserProfileButtonView = UserProfileButtonView(userProfileInfoType: .advanceTicket,
-                                                                                 info: 0)
+    private var yesPointView: UserProfileButtonView = UserProfileButtonView(userProfileInfoType: .yesPoint, info: 0)
+    private var saleCouponView: UserProfileButtonView = UserProfileButtonView(userProfileInfoType: .saleCoupon, info: 0)
+    private var advanceTicketView: UserProfileButtonView = UserProfileButtonView(userProfileInfoType: .advanceTicket, info: 0)
+    
     private let firstLineView: UIView = UIView()
     private let secondLineView: UIView = UIView()
     private let thirdLineView: UIView = UIView()
@@ -35,20 +34,20 @@ class ProfileMyTicketTableViewCell: UITableViewCell, UITableViewRegisterable {
         fatalError("init(coder:) has not been implemented")
     }
 }
-extension ProfileMyTicketTableViewCell{
-    public func setDataBind(user: User){
+extension ProfileMyTicketTableViewCell {
+    
+    public func setDataBind(user: User) {
         self.user = user
         yesPointView.setInfoData(user.yesPoint)
         saleCouponView.setInfoData(user.saleCoupon)
         advanceTicketView.setInfoData(user.advanceTicket)
     }
     private func setLayout(){
-        
         contentView.addSubViews(yesPointView, saleCouponView, advanceTicketView, firstLineView, secondLineView, thirdLineView)
         let infoViewWidth = (contentView.frame.size.width-50) / 3
-        firstLineView.backgroundColor = Color.yesVeryLightGrey
-        secondLineView.backgroundColor = Color.yesVeryLightGrey
-        thirdLineView.backgroundColor = Color.yesVeryLightGrey
+        [firstLineView, secondLineView, thirdLineView].forEach {
+            $0.backgroundColor = Color.yesVeryLightGrey
+        }
         yesPointView.snp.makeConstraints { make in
             make.leading.equalToSuperview().offset(20)
             make.width.equalTo(infoViewWidth)
@@ -68,16 +67,14 @@ extension ProfileMyTicketTableViewCell{
             make.top.equalTo(yesPointView)
         }
         
-        
         firstLineView.snp.makeConstraints { make in
             make.top.bottom.equalTo(yesPointView)
-            
             make.leading.equalToSuperview().inset(50+infoViewWidth)
             make.width.equalTo(1)
         }
         secondLineView.snp.makeConstraints { make in
             make.top.bottom.equalTo(firstLineView)
-            
+
             make.trailing.equalToSuperview().inset(50+infoViewWidth)
             make.width.equalTo(1)
         }

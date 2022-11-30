@@ -86,6 +86,8 @@
 		525BB716292A8E3800B99358 /* MyTicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525BB715292A8E3800B99358 /* MyTicketViewController.swift */; };
 		525BB719292A91D100B99358 /* TicketInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525BB718292A91D100B99358 /* TicketInfoView.swift */; };
 		529FE3AB292763FD00A8D7AE /* TicketCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529FE3AA292763FD00A8D7AE /* TicketCollectionViewCell.swift */; };
+		52B19C89293290D200C542C8 /* MyTicketDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B19C88293290D200C542C8 /* MyTicketDTO.swift */; };
+		52B19C8E293295BA00C542C8 /* MyTicketAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B19C8D293295BA00C542C8 /* MyTicketAPI.swift */; };
 		52EA881E292B662B007F9B23 /* Int+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA881D292B662B007F9B23 /* Int+.swift */; };
 		52EA8820292B6EE3007F9B23 /* MyConcertCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA881F292B6EE3007F9B23 /* MyConcertCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -167,6 +169,8 @@
 		525BB715292A8E3800B99358 /* MyTicketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTicketViewController.swift; sourceTree = "<group>"; };
 		525BB718292A91D100B99358 /* TicketInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketInfoView.swift; sourceTree = "<group>"; };
 		529FE3AA292763FD00A8D7AE /* TicketCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketCollectionViewCell.swift; sourceTree = "<group>"; };
+		52B19C88293290D200C542C8 /* MyTicketDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTicketDTO.swift; sourceTree = "<group>"; };
+		52B19C8D293295BA00C542C8 /* MyTicketAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTicketAPI.swift; sourceTree = "<group>"; };
 		52EA881D292B662B007F9B23 /* Int+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+.swift"; sourceTree = "<group>"; };
 		52EA881F292B6EE3007F9B23 /* MyConcertCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyConcertCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -516,6 +520,7 @@
 			isa = PBXGroup;
 			children = (
 				3B9E5D152930D69200D8D9F7 /* DetailAPI.swift */,
+				52B19C8D293295BA00C542C8 /* MyTicketAPI.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -523,6 +528,7 @@
 		3BA7535B292C5F1900FEEBD8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				52B19C87293290C200C542C8 /* MyTicket */,
 				3BA7535C292C5F2900FEEBD8 /* DetailDTO.swift */,
 				3B9E5D172930D6B200D8D9F7 /* DetailResponse.swift */,
 			);
@@ -580,7 +586,6 @@
 			isa = PBXGroup;
 			children = (
 				5209DB192924E4F20054F9FD /* MyTicketTabelViewHeaderView.swift */,
-				5209DB24292524E60054F9FD /* Cell */,
 			);
 			path = ReusableView;
 			sourceTree = "<group>";
@@ -589,8 +594,9 @@
 			isa = PBXGroup;
 			children = (
 				5209DB22292524C20054F9FD /* UserProfileButtonView.swift */,
-				5209DB162924DA370054F9FD /* ReusableView */,
 				525BB718292A91D100B99358 /* TicketInfoView.swift */,
+				5209DB24292524E60054F9FD /* Cell */,
+				5209DB162924DA370054F9FD /* ReusableView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -613,6 +619,14 @@
 				525BB70F292A8D9600B99358 /* User.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		52B19C87293290C200C542C8 /* MyTicket */ = {
+			isa = PBXGroup;
+			children = (
+				52B19C88293290D200C542C8 /* MyTicketDTO.swift */,
+			);
+			path = MyTicket;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -748,6 +762,7 @@
 				0333046D2927770C00CCF43A /* ShowGalleryTableViewCell.swift in Sources */,
 				3BA75363292C66F100FEEBD8 /* ActorCollectionViewCell.swift in Sources */,
 				3BA75372292C6FF000FEEBD8 /* ShowInfoTableViewCell.swift in Sources */,
+				52B19C8E293295BA00C542C8 /* MyTicketAPI.swift in Sources */,
 				3B78BB042921D47C002438F2 /* SceneDelegate.swift in Sources */,
 				3B88941C292D3D800084FF95 /* ExpandingButton.swift in Sources */,
 				5209DB2029250A110054F9FD /* ConcertMyTicketTableViewCell.swift in Sources */,
@@ -771,6 +786,7 @@
 				3B53F9C429222F94006E3156 /* UITabBar+.swift in Sources */,
 				3BE106E22930EBEC00942268 /* UILabel+.swift in Sources */,
 				3B9E5D00292F58F700D8D9F7 /* Environment.swift in Sources */,
+				52B19C89293290D200C542C8 /* MyTicketDTO.swift in Sources */,
 				3B9E5D06292F5A7D00D8D9F7 /* NetworkConstant.swift in Sources */,
 				5209DB1A2924E4F20054F9FD /* MyTicketTabelViewHeaderView.swift in Sources */,
 			);

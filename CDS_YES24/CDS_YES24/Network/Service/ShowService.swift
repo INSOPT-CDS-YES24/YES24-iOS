@@ -10,6 +10,7 @@ import Moya
 
 enum ShowService {
     case detail
+    case myTicket
 }
 
 extension ShowService: TargetType {
@@ -21,6 +22,8 @@ extension ShowService: TargetType {
         switch self {
         case .detail:
             return URLConstant.detail
+        case .myTicket:
+            return URLConstant.myTicket
         }
     }
     
@@ -28,12 +31,16 @@ extension ShowService: TargetType {
         switch self {
         case .detail:
             return .get
+        case .myTicket:
+            return .get
         }
     }
     
     var task: Moya.Task {
         switch self {
         case .detail:
+            return .requestPlain
+        case .myTicket:
             return .requestPlain
         }
     }

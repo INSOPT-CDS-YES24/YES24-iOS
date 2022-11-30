@@ -6,12 +6,16 @@
 //
 
 import UIKit
-
+import Moya
 import SnapKit
 import Then
 
 final class MyTicketViewController: UIViewController {
-    private let user: User = User(name: "김현지", yesPoint: 3127, saleCoupon: 0, advanceTicket: 0)
+    
+    private var user: User?
+    
+    private var myTicketData: MyTicketResponseDTO?
+    
     private let titleLabel: UILabel = UILabel()
     private let myTicketTableView: UITableView = UITableView(frame: .zero, style: .grouped)
 
@@ -19,13 +23,29 @@ final class MyTicketViewController: UIViewController {
     // MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUI() 
-        setLayout()
-        setTableView()
+        setAPIDataBind()
     }
 }
 
-extension MyTicketViewController{
+extension MyTicketViewController {
+    private func setAPIDataBind() {
+        MyTicketAPI.shared.myTicket(
+            completion: { [weak self] myTicketResponseDTO, error in
+                self?.myTicketData = myTicketResponseDTO
+                guard let myTicketData = self?.myTicketData else {
+                    return
+                }
+                self?.user = User(name: "김현지",
+                                  yesPoint: myTicketData.yesPoint,
+                                  saleCoupon: myTicketData.saleCoupon,
+                                  advanceTicket: myTicketData.booking)
+                
+                self?.setUI()
+                self?.setLayout()
+                self?.setTableView()
+            })
+        
+    }
     // MARK: - View 속성 설정
     private func setUI(){
         view.backgroundColor = .white
@@ -82,15 +102,17 @@ extension MyTicketViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.section{
         case 0:
-            guard let cell = myTicketTableView.dequeueReusableCell(withIdentifier: ProfileMyTicketTableViewCell.className, for: indexPath) as? ProfileMyTicketTableViewCell else {return ProfileMyTicketTableViewCell()}
+            guard let cell = myTicketTableView.dequeueReusableCell(withIdentifier: ProfileMyTicketTableViewCell.className, for: indexPath) as? ProfileMyTicketTableViewCell else {return ProfileMyTicketTableViewCell() }
             cell.selectionStyle = .none
+            guard let user = self.user else {
+                return UITableViewCell()
+            }
             cell.setDataBind(user: user)
             return cell
         case 1:
             guard let cell = myTicketTableView.dequeueReusableCell(withIdentifier: RecentReserveMyTicketTableViewCell.className, for: indexPath) as? RecentReserveMyTicketTableViewCell else {return RecentReserveMyTicketTableViewCell()}
             cell.selectionStyle = .none
             return cell
-////            cell.setDataBind(user: user)
         case 2:
             guard let cell = myTicketTableView.dequeueReusableCell(withIdentifier: ConcertMyTicketTableViewCell.className, for: indexPath) as? ConcertMyTicketTableViewCell else {return ConcertMyTicketTableViewCell()}
             cell.selectionStyle = .none
@@ -102,7 +124,10 @@ extension MyTicketViewController: UITableViewDataSource{
 
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         guard let headerView = myTicketTableView.dequeueReusableHeaderFooterView(withIdentifier: MyTicketTabelViewHeaderView.className) as? MyTicketTabelViewHeaderView else { return UIView()}
-
+        
+        guard let user = self.user else {
+            return UIView()
+        }
         switch section{
         case 0:
             headerView.setDataBind(headerType: .userProfile, user: user)
