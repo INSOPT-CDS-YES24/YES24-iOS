@@ -12,7 +12,7 @@ enum UserProfileInfoType{
     case saleCoupon
     case advanceTicket
 }
-class UserProfileButtonView: UIView{
+class UserProfileButtonView: UIView {
     
     private let userProfileInfoType: UserProfileInfoType
     private var info: Int
@@ -24,7 +24,6 @@ class UserProfileButtonView: UIView{
         self.userProfileInfoType = userProfileInfoType
         self.info = info
         super.init(frame: .zero)
-        
         setUI()
         setLayout()
     }
@@ -33,11 +32,11 @@ class UserProfileButtonView: UIView{
         fatalError("init(coder:) has not been implemented")
     }
 }
-extension UserProfileButtonView{
-    private func setUI(){
+extension UserProfileButtonView {
+    private func setUI() {
         profileInfoLabel.font = .pretendard(.medium, size: 14)
         userInfoLabel.font = .pretendard(.bold, size: 16)
-        switch userProfileInfoType{
+        switch userProfileInfoType {
         case .yesPoint:
             profileInfoLabel.text = Const.String.yesPoint
         case .saleCoupon:
@@ -45,25 +44,23 @@ extension UserProfileButtonView{
         case .advanceTicket:
             profileInfoLabel.text = Const.String.advanceTicket
         }
-        userInfoLabel.text = "\(info)원"
     }
-    private func setLayout(){
-        
+    
+    private func setLayout() {
         addSubViews(profileInfoLabel, userInfoLabel)
         profileInfoLabel.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.bottom.equalTo(self.snp.centerY)
             make.height.equalTo(25)
         }
-        
         userInfoLabel.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.top.equalTo(self.snp.centerY)
             make.height.equalTo(25)
         }
     }
-    public func setInfoData(_ infoData: Int){
-        self.info = infoData
-        setUI()
+    
+    public func setInfoData(_ infoData: Int) {
+        userInfoLabel.text = "\(infoData)원"
     }
 }
